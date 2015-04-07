@@ -1,0 +1,46 @@
+//
+// Estilos de About
+//
+
+.about-portrait {
+	right: 0;
+	position: absolute; 
+}
+
+//Shape Portrait
+.about-portrait::before {
+	content: "";
+  border-left: 360px solid $section-about;
+  border-bottom: 520px solid transparent;
+  border-right: 0;
+  position: absolute;
+}
+
+.about-info p {
+	position: absolute;
+	width: 856px;
+}
+
+.comment-item {
+	border: 1px solid #fff;
+	height: 198px; 
+	position: relative;
+	margin: 45px 7px 63px 7px;
+	width: 384px;
+	//Shape Comment Portrait
+	&::before {
+		content: "";
+	  border-right: 260px solid $section-about;
+	  border-bottom: 195px solid transparent;
+	  position: absolute;
+	}
+	footer {
+		background: none;
+		float: right;
+	}
+}
+
+.skills {
+	height: 150px;
+	margin-top: 240px;
+}

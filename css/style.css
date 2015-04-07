@@ -1,0 +1,396 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico);
+.about-me .about-info, .about-me .comments, .big-bg-image .contact, .main-nav ul, .projects ul, #project-info {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden; }
+
+.big-bg-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(134, 108, 108, 0.9); }
+
+button:focus, button:active, button:focus:active, form input:focus, form input:active, form input:focus:active, form textarea:focus, form textarea:active, form textarea:focus:active {
+  box-shadow: none;
+  outline: 0;
+  -webkit-box-shadow: none; }
+
+.project-info, .project-item {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0; }
+
+.main-nav li:first-child a {
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+* {
+  box-sizing: inherit; }
+
+a {
+  color: #f2f2f2;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-decoration: none; }
+
+body {
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  margin: 0;
+  overflow-x: hidden; }
+
+blockquote {
+  margin: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: 10px; }
+  blockquote p {
+    text-align: right;
+    padding: 20px 0; }
+
+button {
+  background: none;
+  border: 0;
+  padding: 0; }
+
+form {
+  float: right;
+  margin-top: 115px;
+  width: 300px; }
+  form label {
+    width: 100%;
+    display: block; }
+  form input, form textarea {
+    font-family: "Josefin Sans", sans-serif;
+    color: #856d6d;
+    font-size: 18px;
+    font-size: 1.8rem;
+    width: 100%;
+    resize: none; }
+  form .button {
+    width: 100px;
+    float: right; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+h1 {
+  margin: 0; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  margin: 0; }
+
+h2 {
+  font-size: 40px;
+  font-size: 4rem;
+  margin: 50px 0 30px 0; }
+
+li {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+p, pre, label, input {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 0.3em;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+ul, p {
+  margin: 0;
+  padding: 0; }
+
+::-webkit-input-placeholder {
+  color: transparent; }
+
+::-moz-placeholder {
+  color: transparent; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: transparent; }
+
+/* ie */
+input:-moz-placeholder {
+  color: transparent; }
+
+.button {
+  background: none;
+  border: 2px solid #fff;
+  color: #f2f2f2;
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  padding: 0.5em 1em;
+  width: inherit; }
+
+.social-media a {
+  background: url(../img/social-net.png) no-repeat;
+  color: transparent;
+  display: block;
+  height: 187px;
+  margin-top: 10px; }
+
+.behance a {
+  background-position: right top;
+  margin-left: 28px;
+  width: 92px; }
+
+.facebook a {
+  background-position: left top;
+  width: 40px; }
+
+.invision a {
+  background-position: -38px top;
+  margin-left: 28px;
+  width: 58px; }
+
+footer {
+  background: url("../img/background/background-footer.png") no-repeat; }
+
+.about-me {
+  background-color: #bb5c65; }
+
+.projects {
+  background-color: #99646a; }
+  .projects ul {
+    padding: 200px 0; }
+
+#project-info {
+  color: #99646a; }
+
+nav ul {
+  padding: 0; }
+nav a:hover {
+  text-decoration: underline; }
+
+.main-nav {
+  background-color: rgba(225, 225, 225, 0.9); }
+  .main-nav li {
+    vertical-align: top; }
+  .main-nav a {
+    color: #856d6d;
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    height: 70px;
+    line-height: 60px;
+    padding: 0 30px; }
+  .main-nav li:first-child a {
+    background: url(../img/logo-small.png) no-repeat center;
+    margin-right: 635px;
+    width: 150px; }
+
+header {
+  background: url("../img/background/background-header.png") no-repeat center center; }
+
+.header-content {
+  color: #fff;
+  height: 700px;
+  padding: 200px 0 0 0;
+  text-align: center; }
+  .header-content p {
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: normal; }
+  .header-content h2 {
+    font-size: 40px;
+    font-size: 4rem;
+    margin: 0; }
+    .header-content h2:before, .header-content h2:after {
+      background-color: #f2f2f2;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      vertical-align: super;
+      width: 10%; }
+    .header-content h2:before {
+      margin: 0 2% 0 -50%; }
+    .header-content h2:after {
+      margin: 0 -50% 0 2%; }
+  .header-content h3 {
+    font-size: 60px;
+    font-size: 6rem; }
+  .header-content a {
+    display: inline-block;
+    padding-top: 200px; }
+    .header-content a span {
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      display: block;
+      height: 12px;
+      margin-left: 75px;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 12px; }
+
+.app-vector {
+  background: url(../img/background/app-vector.png) no-repeat center center;
+  float: right;
+  height: 610px;
+  padding: 56px 30px;
+  width: 339px; }
+
+.close-project-section {
+  float: right;
+  margin-top: 25px;
+  position: absolute;
+  right: 50px; }
+
+.hideScrollBar {
+  background-color: #856d6d;
+  height: 88%;
+  margin: 48px 15px 0 15px;
+  overflow-x: hidden;
+  width: 101%; }
+
+.info-project {
+  float: left;
+  width: 30%; }
+
+.projects li {
+  width: 380px;
+  height: 211px;
+  margin: 9px; }
+.projects h4 {
+  font-size: 20px;
+  font-size: 2rem; }
+.projects p {
+  font-size: 28px;
+  font-size: 2.8rem; }
+
+.project-info {
+  height: 100%;
+  padding: 60px;
+  position: absolute;
+  opacity: 0;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-backface-visibility: hidden; }
+
+.project-item {
+  height: 100%;
+  padding: 0;
+  position: relative; }
+  .project-item:hover {
+    box-shadow: inset 0 0 0 126px rgba(153, 100, 106, 0.9), 0 1px 3px rgba(0, 0, 0, 0.8); }
+    .project-item:hover .project-info {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+
+.project-wikipedia {
+  background-image: url(../img/project-wiki/small-wiki.png); }
+
+.project-artesanias {
+  background-image: url(../img/project-elCuervo/small-elcuervo.png); }
+
+.project-lasActivist {
+  background-image: url(../img/project-thelastActivist/small-thelastActivist.png); }
+
+.project-laIluminada {
+  background-image: url(../img/project-laIluminada/small-laIluminada.png); }
+
+.project-hechoxmi {
+  background-image: url(../img/project-hechoxMi/small-hechoxmi.png); }
+
+.project-suntime {
+  background-image: url(../img/project-sunTime/small-suntime.png); }
+
+.slider-button {
+  margin: 0 auto;
+  width: 155px; }
+
+.slider-project {
+  float: right;
+  margin: 60px 0; }
+
+.web-vector {
+  background: url(../img/background/web-vector.png) no-repeat;
+  float: right;
+  height: 576px;
+  overflow: hidden;
+  width: 821px; }
+
+#project-info h2 {
+  font-family: "Josefin Sans", sans-serif; }
+#project-info span {
+  display: block;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+#button-next {
+  display: inline-block;
+  height: 80px;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 16px; }
+
+#button-previous {
+  display: inline-block;
+  height: 80px;
+  margin-right: 120px;
+  width: 16px; }
+
+.about-portrait {
+  right: 0;
+  position: absolute; }
+
+.about-portrait::before {
+  content: "";
+  border-left: 360px solid #bb5c65;
+  border-bottom: 520px solid transparent;
+  border-right: 0;
+  position: absolute; }
+
+.about-info p {
+  position: absolute;
+  width: 856px; }
+
+.comment-item {
+  border: 1px solid #fff;
+  height: 198px;
+  position: relative;
+  margin: 45px 7px 63px 7px;
+  width: 384px; }
+  .comment-item::before {
+    content: "";
+    border-right: 260px solid #bb5c65;
+    border-bottom: 195px solid transparent;
+    position: absolute; }
+  .comment-item footer {
+    background: none;
+    float: right; }
+
+.skills {
+  height: 150px;
+  margin-top: 240px; }
+
+/*# sourceMappingURL=style.css.map */

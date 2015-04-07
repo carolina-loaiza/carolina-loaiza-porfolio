@@ -1,0 +1,38 @@
+//
+// Estilos para la navegación
+//
+
+// Estilos generales
+
+nav {
+  ul {
+    padding: 0;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+// Navegación principal
+.main-nav {
+  background-color: $background-nav;
+  li {
+    vertical-align: top;
+  }
+  a {
+    color: $text-secondary;
+    display: block;
+    font-family: $text-sans;
+    font-weight: 600;
+    height: 70px;
+    line-height: 60px;
+    padding: 0 30px;
+  }
+  // Enlace a Inicio/Logo
+  li:first-child a {
+    background: url(../img/logo-small.png) no-repeat center;
+    margin-right: 635px;
+    width: 150px;
+    @extend %text-hidden;
+  }
+}

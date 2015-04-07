@@ -1,0 +1,38 @@
+header {
+  background-image:none;
+  background-color:#bb5c65;
+}
+
+.header-content {
+  padding:90px 0 0;
+}
+
+.header-content span {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474, M12=-0.7071067811865477, M21=0.7071067811865477, M22=0.7071067811865474, SizingMethod='auto expand')";
+}
+
+.main-nav a {
+  color:#f2f2f2;
+}
+
+.main-nav li:first-child a {
+  background:url(../img/logo-small.png) no-repeat center;
+}
+
+footer {
+  background-image:none;
+  background-color:#856d6d;
+}
+
+.header-content a {
+  padding-top:210px;
+}
+
+.project-info {
+  filter:alpha(opacity=0);
+}
+
+.project-info:hover {
+  background-color:#99646a;
+  filter:alpha(opacity=100);
+}

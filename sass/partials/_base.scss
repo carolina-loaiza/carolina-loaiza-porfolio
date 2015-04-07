@@ -1,0 +1,148 @@
+// 
+// Estilos para los elementos base
+//
+* {
+  box-sizing: inherit;
+}
+
+a {
+  color: $text;
+  font-family: $text-sans;
+  font-weight: normal;
+  @include font-size(18);
+  text-decoration: none;
+}
+
+body {
+  background-color: $background-color;
+  color: $text;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: 10px;
+  p {
+    text-align: right;
+    padding: 20px 0;
+  }
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  &:focus, &:active, &:focus:active {
+    @extend %blue-border;
+  }
+}
+
+form {
+  float: right;
+  margin-top: 115px;
+  width: 300px;
+  label {
+    width: 100%;
+    display: block;
+  }
+  input, textarea {
+    font-family: $text-sans;
+    color: $text-secondary;
+    @include font-size(18);
+    width: 100%;
+    resize: none;
+    &:focus, &:active, &:focus:active {
+    @extend %blue-border;
+  }
+  }
+  .button {
+    width: 100px;
+    float: right;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $title-cursive;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  @include font-size(40);
+  margin: 50px 0 30px 0;
+}
+
+li {
+  @extend %list-style;
+  font-family: $text-sans;
+  @include font-size(18);
+}
+
+p, pre, label, input{
+  font-family: $text-sans;
+  margin-bottom: 0.3em;
+  @include font-size(18);
+}
+
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+// Placeholder hidden
+::-webkit-input-placeholder { 
+  color: transparent; 
+}
+::-moz-placeholder { 
+  color: transparent; 
+} /* firefox 19+ */
+:-ms-input-placeholder { 
+  color: transparent;  
+} /* ie */
+input:-moz-placeholder { 
+  color: transparent;  
+}
+
+
+// Patrones
+
+.button {
+  @include button(18);
+}
+
+.social-media a {
+  background: url(../img/social-net.png) no-repeat;
+  color: transparent;
+  display: block;
+  height: 187px;
+  margin-top: 10px;
+}
+
+.behance a {
+  background-position:  right top;
+  margin-left: 28px;
+  width: 92px;
+}
+
+.facebook a {
+  background-position: left top;
+  width: 40px;
+}
+
+.invision a {
+  background-position: -38px top;
+  margin-left: 28px;
+  width: 58px;
+}

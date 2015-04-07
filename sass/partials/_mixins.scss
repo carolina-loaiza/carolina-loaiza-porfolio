@@ -1,0 +1,31 @@
+//
+// Mixins
+//
+
+// Button
+@mixin button($font-size, $text-color: #fff, $border-color: #fff) {
+  background: none;
+  border: 2px solid $border-color;
+  color: $text;
+  display: inline-block;
+  font-family: $text-sans;
+  @include font-size($font-size);
+  margin-top: 10px;
+  padding: 0.5em 1em;
+  width: inherit;
+}
+
+// font-size mixin
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// Item transform scale
+@mixin scale($number){
+  -webkit-transform: scale($number);
+  -moz-transform: scale($number);
+  -o-transform: scale($number);
+  -ms-transform: scale($number);
+  transform: scale($number);
+}

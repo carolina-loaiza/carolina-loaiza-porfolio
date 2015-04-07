@@ -1,0 +1,55 @@
+//
+// Estilos del header
+//
+
+header {
+  background: url("../img/background/background-header.png") no-repeat center center;
+}
+
+.header-content {
+  color: #fff;
+  height: 700px;
+  padding: 200px 0 0 0;
+  text-align: center;
+  p{
+    @include font-size(24);
+    font-weight: normal;
+  }
+  h2 {
+    @include font-size(40);
+    margin: 0;
+    &:before, &:after {
+      background-color: $text;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      vertical-align: super;
+      width: 10%;
+    }
+    &:before {
+      margin: 0 2% 0 -50%;
+    }
+    &:after {
+      margin: 0 -50% 0 2%;
+    }
+  }
+  h3 {
+    @include font-size(60);
+  }
+  a{
+    display: inline-block;
+    padding-top: 200px;
+    span {
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      display:block;
+      height: 12px;
+      margin-left: 75px;
+      -ms-transform: rotate(45deg); 
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);   
+      width: 12px;
+     
+    }
+  }
+}

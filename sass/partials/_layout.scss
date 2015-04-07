@@ -1,0 +1,39 @@
+//
+// Layout styles
+//
+
+footer {
+  background:  url("../img/background/background-footer.png") no-repeat;
+}
+
+.about-me {
+  background-color: $section-about;
+  .about-info, .comments {
+    @extend %container;
+  }
+}
+
+.big-bg-image {
+  @extend %background-image;
+  .contact {
+    @extend %container;
+  }	
+}
+
+.main-nav ul {
+  @extend %container;
+}
+
+.projects {
+  background-color: $section-project;
+  ul {
+    padding: 200px 0;
+    @extend %container;
+  }
+}
+
+#project-info {
+  color: $section-project;
+  @extend %container;
+}
+

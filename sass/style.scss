@@ -1,0 +1,20 @@
+//
+// Estilos para el sitio del Drupal Camp CR
+//
+
+//
+// Parciales
+//
+
+// Parciales base
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/placeholders";
+@import "partials/base";
+@import "partials/layout";
+
+// Módulos
+@import "partials/modules/navigation";
+@import "partials/modules/header";
+@import "partials/modules/project";
+@import "partials/modules/about";
