@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico);
-.about-me .about-info, .about-me .comments, .big-bg-image .contact, .main-nav ul, .projects ul, #project-info {
+.about-me .about-info, .about-me .comments, .background-image .contact, .main-nav ul, .projects ul, #project-info {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden; }
 
-.big-bg-image {
+.background-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -310,10 +310,10 @@ header {
 .project-artesanias {
   background-image: url(../img/project-elCuervo/small-elcuervo.png); }
 
-.project-lasActivist {
+.project-last-activist {
   background-image: url(../img/project-thelastActivist/small-thelastActivist.png); }
 
-.project-laIluminada {
+.project-la-iluminada {
   background-image: url(../img/project-laIluminada/small-laIluminada.png); }
 
 .project-hechoxmi {
@@ -337,9 +337,9 @@ header {
   overflow: hidden;
   width: 821px; }
 
-#project-info h2 {
+.project-style h2 {
   font-family: "Josefin Sans", sans-serif; }
-#project-info span {
+.project-style span {
   display: block;
   font-family: "Pacifico", cursive;
   font-size: 24px;
