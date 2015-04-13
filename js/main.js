@@ -13,16 +13,26 @@ showProject.administrador = function(data) {
         //muestra la informacion con click;
         currentItem[i].onclick = function() {
           //hace scroll a la section de project-info;
-          scrollWin(231, 1600)
+          scrollWin(231, 1580)
           document.getElementById("close").classList.add('display-button');
           var id = this.id;
-          var contenido = "";
-          contenido +=
-            '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data[id].categories[3].value + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
-            '<h2>' + data[id].categories[0].value + '<span>' + data[id].categories[1].value + '</span></h2>' +
-            '<div class="info-project"><p>' + data[id].categories[2].value + '</p></div>';
-          var contentInfo = document.getElementById('project-info');
-          contentInfo.innerHTML = contenido;
+          if (id == "4") {
+            var contenidoApp = "";
+            contenidoApp +=
+              '<div class="slider-project"><div class="app-vector"><img src="' + data[id].categories[3].value + '"></div><div class="app-vector"><img src="' + data[id].categories[3].value + '"></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
+              '<h2>' + data[id].categories[0].value + '<span>' + data[id].categories[1].value + '</span></h2>' +
+              '<div class="info-project"><p>' + data[id].categories[2].value + '</p></div>';
+            var contentInfo = document.getElementById('project-info');
+            contentInfo.innerHTML = contenidoApp;
+          }else {
+            var contenido = "";
+            contenido +=
+              '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data[id].categories[3].value + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
+              '<h2>' + data[id].categories[0].value + '<span>' + data[id].categories[1].value + '</span></h2>' +
+              '<div class="info-project"><p>' + data[id].categories[2].value + '</p></div>';
+            var contentInfo = document.getElementById('project-info');
+            contentInfo.innerHTML = contenido;
+          }
           //cerrar la section proyect info;
           document.getElementById("close").onclick = function() {
             contentInfo.innerHTML = "";
