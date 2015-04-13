@@ -87,6 +87,14 @@ li {
   font-size: 18px;
   font-size: 1.8rem; }
 
+hr {
+  height: 20px;
+  border: 0;
+  margin: 0;
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
+
 p, pre, label, input {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 0.3em;
@@ -171,7 +179,7 @@ footer {
 .projects {
   background-color: #99646a; }
   .projects ul {
-    padding: 13% 0; }
+    padding: 11% 0 13% 0; }
 
 .project-style {
   color: #99646a; }
@@ -251,7 +259,7 @@ header {
 .close-project-section {
   display: none;
   margin-left: 95%;
-  margin-top: 25px; }
+  padding-top: 25px; }
   .close-project-section svg {
     width: 43.353px;
     height: 38.728px;
@@ -309,6 +317,11 @@ header {
       -o-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); }
+
+.project-json {
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
 
 .project-wikipedia {
   background-image: url(../img/project-wiki/small-wiki.png); }

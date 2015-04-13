@@ -27,7 +27,7 @@ footer {
 .projects {
   background-color: $section-project;
   ul {
-    padding: 13% 0;
+    padding: 11% 0 13% 0;
     @extend %container;
   }
 }
