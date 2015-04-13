@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico);
-.about-me .about-info, .about-me .comments, .background-image .contact, .main-nav ul, .projects ul, #project-info {
+.about-me .about-info, .about-me .comments, .about-me ul, .background-image .contact, .main-nav ul, .projects ul, .project-style {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden; }
@@ -31,7 +31,8 @@ li {
 .main-nav li:first-child a {
   text-indent: 100%;
   overflow: hidden;
-  white-space: nowrap; }
+  white-space: nowrap;
+  color: transparent; }
 
 * {
   box-sizing: inherit; }
@@ -64,24 +65,6 @@ button {
   border: 0;
   padding: 0; }
 
-form {
-  float: right;
-  margin-top: 115px;
-  width: 300px; }
-  form label {
-    width: 100%;
-    display: block; }
-  form input, form textarea {
-    font-family: "Josefin Sans", sans-serif;
-    color: #856d6d;
-    font-size: 18px;
-    font-size: 1.8rem;
-    width: 100%;
-    resize: none; }
-  form .button {
-    width: 100px;
-    float: right; }
-
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -97,7 +80,7 @@ h2, h3, h4, h5, h6 {
 h2 {
   font-size: 40px;
   font-size: 4rem;
-  margin: 50px 0 30px 0; }
+  margin: 5% 0 3% 0; }
 
 li {
   font-family: "Josefin Sans", sans-serif;
@@ -113,6 +96,24 @@ p, pre, label, input {
 ul, p {
   margin: 0;
   padding: 0; }
+
+form {
+  float: right;
+  margin-top: 7%;
+  width: 26%; }
+  form label {
+    width: 100%;
+    display: block; }
+  form input, form textarea {
+    font-family: "Josefin Sans", sans-serif;
+    color: #856d6d;
+    font-size: 18px;
+    font-size: 1.8rem;
+    width: 100%;
+    resize: none; }
+  form .button {
+    width: 100px;
+    float: right; }
 
 ::-webkit-input-placeholder {
   color: transparent; }
@@ -170,9 +171,9 @@ footer {
 .projects {
   background-color: #99646a; }
   .projects ul {
-    padding: 200px 0; }
+    padding: 13% 0; }
 
-#project-info {
+.project-style {
   color: #99646a; }
 
 nav ul {
@@ -202,8 +203,7 @@ header {
 
 .header-content {
   color: #fff;
-  height: 700px;
-  padding: 200px 0 0 0;
+  padding: 13% 0 1% 0;
   text-align: center; }
   .header-content p {
     font-size: 24px;
@@ -249,10 +249,16 @@ header {
   width: 339px; }
 
 .close-project-section {
-  float: right;
-  margin-top: 25px;
-  position: absolute;
-  right: 50px; }
+  display: none;
+  margin-left: 95%;
+  margin-top: 25px; }
+  .close-project-section svg {
+    width: 43.353px;
+    height: 38.728px;
+    fill: #99646A; }
+
+.display-button {
+  display: block; }
 
 .hideScrollBar {
   background-color: #856d6d;
@@ -266,9 +272,9 @@ header {
   width: 30%; }
 
 .projects li {
-  width: 380px;
+  width: 31.5%;
   height: 211px;
-  margin: 9px; }
+  margin: 0.5%; }
 .projects h4 {
   font-size: 20px;
   font-size: 2rem; }
@@ -328,7 +334,7 @@ header {
 
 .slider-project {
   float: right;
-  margin: 60px 0; }
+  margin: 3% 0; }
 
 .web-vector {
   background: url(../img/background/web-vector.png) no-repeat;
@@ -338,7 +344,8 @@ header {
   width: 821px; }
 
 .project-style h2 {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 3%; }
 .project-style span {
   display: block;
   font-family: "Pacifico", cursive;
@@ -359,9 +366,12 @@ header {
   margin-right: 120px;
   width: 16px; }
 
+.about-info p {
+  position: absolute;
+  width: 700px; }
+
 .about-portrait {
-  right: 0;
-  position: absolute; }
+  float: right; }
 
 .about-portrait::before {
   content: "";
@@ -370,17 +380,13 @@ header {
   border-right: 0;
   position: absolute; }
 
-.about-info p {
-  position: absolute;
-  width: 856px; }
-
 .comment-item {
   border: 1px solid #fff;
   height: 198px;
   position: relative;
   margin: 45px 7px 63px 7px;
   width: 384px; }
-  .comment-item::before {
+  .comment-item:before {
     content: "";
     border-right: 260px solid #bb5c65;
     border-bottom: 195px solid transparent;
@@ -390,7 +396,86 @@ header {
     float: right; }
 
 .skills {
+  padding: 5% 18%; }
+  .skills h4 {
+    text-align: center;
+    width: 162px;
+    font-size: 20px;
+    font-size: 2rem; }
+
+.bar-html5, .bar-css3 {
+  margin-right: 20px; }
+
+.box-skill {
+  width: 150px;
   height: 150px;
-  margin-top: 240px; }
+  stroke-dasharray: 2000;
+  -webkit-animation: draw 5s linear forwards;
+  animation: draw 5s linear forwards;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2; }
+
+@-webkit-keyframes draw {
+  from {
+    stroke-dashoffset: 2000; }
+  to {
+    stroke-dashoffset: 0; } }
+.color-fill {
+  fill: #bb5c65; }
+
+.box-background {
+  width: 150px;
+  height: 150px;
+  background-color: #fff; }
+
+.box-animation-html5 {
+  width: 150px;
+  height: 50px;
+  margin-top: -152px;
+  background-color: #bb5c65;
+  -webkit-animation: htmlcinco 5s;
+  /* Chrome, Safari, Opera */
+  animation: htmlcinco 5s; }
+
+@-webkit-keyframes htmlcinco {
+  0% {
+    height: 150px; }
+  50% {
+    height: 100px; }
+  100% {
+    height: 50px; } }
+.box-animation-css3 {
+  width: 150px;
+  height: 40px;
+  margin-top: -152px;
+  background-color: #bb5c65;
+  -webkit-animation: csstres 5s;
+  /* Chrome, Safari, Opera */
+  animation: csstres 5s; }
+
+@-webkit-keyframes csstres {
+  0% {
+    height: 150px; }
+  50% {
+    height: 100px; }
+  100% {
+    height: 40px; } }
+.box-animation-js {
+  width: 150px;
+  height: 60px;
+  margin-top: -152px;
+  background-color: #bb5c65;
+  -webkit-animation: js 5s;
+  /* Chrome, Safari, Opera */
+  animation: js 5s; }
+
+@-webkit-keyframes js {
+  0% {
+    height: 150px; }
+  50% {
+    height: 100px; }
+  100% {
+    height: 60px; } }
 
 /*# sourceMappingURL=style.css.map */

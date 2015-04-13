@@ -8,7 +8,7 @@ footer {
 
 .about-me {
   background-color: $section-about;
-  .about-info, .comments {
+  .about-info, .comments, ul {
     @extend %container;
   }
 }
@@ -27,12 +27,12 @@ footer {
 .projects {
   background-color: $section-project;
   ul {
-    padding: 200px 0;
+    padding: 13% 0;
     @extend %container;
   }
 }
 
-#project-info {
+.project-style {
   color: $section-project;
   @extend %container;
 }

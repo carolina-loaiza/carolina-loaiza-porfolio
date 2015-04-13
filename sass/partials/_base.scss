@@ -1,6 +1,7 @@
 // 
-// Estilos para los elementos base
+// Estilos para los elementos base y footer
 //
+
 * {
   box-sizing: inherit;
 }
@@ -40,10 +41,52 @@ button {
   }
 }
 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $title-cursive;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  @include font-size(40);
+  margin: 5% 0 3% 0;
+}
+
+li {
+  @extend %list-style;
+  font-family: $text-sans;
+  @include font-size(18);
+}
+
+p, pre, label, input{
+  font-family: $text-sans;
+  margin-bottom: 0.3em;
+  @include font-size(18);
+}
+
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+// 
+// Estilos para los elementos del footer
+//
+
 form {
   float: right;
-  margin-top: 115px;
-  width: 300px;
+  margin-top: 7%;
+  width: 26%;
   label {
     width: 100%;
     display: block;
@@ -64,42 +107,6 @@ form {
   }
 }
 
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: $title-cursive;
-  font-weight: normal;
-  margin: 0;
-}
-
-h2 {
-  @include font-size(40);
-  margin: 50px 0 30px 0;
-}
-
-li {
-  @extend %list-style;
-  font-family: $text-sans;
-  @include font-size(18);
-}
-
-p, pre, label, input{
-  font-family: $text-sans;
-  margin-bottom: 0.3em;
-  @include font-size(18);
-}
-
-ul, p {
-  margin: 0;
-  padding: 0;
-}
 
 // Placeholder hidden
 ::-webkit-input-placeholder { 
@@ -115,9 +122,7 @@ input:-moz-placeholder {
   color: transparent;  
 }
 
-
-// Patrones
-
+// Button Descarga
 .button {
   @include button(18);
 }
