@@ -8,7 +8,7 @@ footer {
 
 .about-me {
   background-color: $section-about;
-  .about-info, .comments, ul {
+  .about-info, .comments{
     @extend %container;
   }
 }
