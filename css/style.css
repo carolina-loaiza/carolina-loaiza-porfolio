@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Pacifico);
-.about-me .about-info, .about-me .comments, .background-image .contact, .main-nav ul, .projects ul, .project-style {
+.about-me .about-info, .about-me .comments, .background-image .contact, .main-nav ul, .projects ul, .project-info {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden; }
@@ -16,7 +16,7 @@ button:focus, button:active, button:focus:active, form input:focus, form input:a
   outline: 0;
   -webkit-box-shadow: none; }
 
-.project-info, .project-item {
+.project-name, .project-item {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -53,10 +53,20 @@ body {
 
 blockquote {
   margin: 0;
-  padding: 0 20px 0 40px;
+  padding: 0 34px 0 45px;
   position: absolute;
   top: 10px;
   text-align: right; }
+  blockquote p:before, blockquote p:after {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    position: absolute; }
+  blockquote p:before {
+    content: "\201C";
+    margin-left: -24px; }
+  blockquote p:after {
+    content: "\201D";
+    margin-left: 10px; }
 
 button {
   background: none;
@@ -179,7 +189,7 @@ footer {
   .projects ul {
     padding: 11% 0 13% 0; }
 
-.project-style {
+.project-info {
   color: #99646a; }
 
 nav ul {
@@ -196,11 +206,11 @@ nav a:hover {
     display: block;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
-    height: 70px;
-    line-height: 60px;
+    height: 82px;
+    line-height: 80px;
     padding: 0 30px; }
   .main-nav li:first-child a {
-    background: url(../img/logo-small.png) no-repeat center;
+    background: url(../img/logo-small.png) no-repeat top;
     margin-right: 635px;
     width: 150px; }
 
@@ -288,7 +298,7 @@ header {
   font-size: 28px;
   font-size: 2.8rem; }
 
-.project-info {
+.project-name {
   height: 100%;
   padding: 60px;
   position: absolute;
@@ -308,7 +318,7 @@ header {
   position: relative; }
   .project-item:hover {
     box-shadow: inset 0 0 0 126px rgba(153, 100, 106, 0.9), 0 1px 3px rgba(0, 0, 0, 0.8); }
-    .project-item:hover .project-info {
+    .project-item:hover .project-name {
       opacity: 1;
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
@@ -316,7 +326,7 @@ header {
       -ms-transform: scale(1);
       transform: scale(1); }
 
-.project-json {
+.project-section {
   -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
@@ -354,10 +364,10 @@ header {
   overflow: hidden;
   width: 821px; }
 
-.project-style h2 {
+.project-info h2 {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 3%; }
-.project-style span {
+.project-info span {
   display: block;
   font-family: "Pacifico", cursive;
   font-size: 24px;
@@ -404,7 +414,8 @@ header {
     position: absolute; }
   .comment-item footer {
     background: none;
-    margin-top: 24px; }
+    margin-top: 13px;
+    font-style: italic; }
 
 .skills {
   margin-top: 258px;
@@ -428,6 +439,11 @@ header {
   stroke: #fff;
   stroke-width: 2; }
 
+@-moz-keyframes draw {
+  from {
+    stroke-dashoffset: 2000; }
+  to {
+    stroke-dashoffset: 0; } }
 @-webkit-keyframes draw {
   from {
     stroke-dashoffset: 2000; }
@@ -446,10 +462,18 @@ header {
   height: 35px;
   margin-top: -103px;
   background-color: #bb5c65;
+  -moz-animation: htmlcinco 5s;
+  -o-animation: htmlcinco 5s;
   -webkit-animation: htmlcinco 5s;
-  /* Chrome, Safari, Opera */
   animation: htmlcinco 5s; }
 
+@-moz-keyframes htmlcinco {
+  0% {
+    height: 103px; }
+  50% {
+    height: 80px; }
+  100% {
+    height: 35px; } }
 @-webkit-keyframes htmlcinco {
   0% {
     height: 103px; }
@@ -462,10 +486,18 @@ header {
   height: 20px;
   margin-top: -103px;
   background-color: #bb5c65;
+  -moz-animation: csstres 5s;
+  -o-animation: csstres 5s;
   -webkit-animation: csstres 5s;
-  /* Chrome, Safari, Opera */
   animation: csstres 5s; }
 
+@-moz-keyframes csstres {
+  0% {
+    height: 103px; }
+  50% {
+    height: 60px; }
+  100% {
+    height: 20px; } }
 @-webkit-keyframes csstres {
   0% {
     height: 103px; }
@@ -478,10 +510,18 @@ header {
   height: 40px;
   margin-top: -103px;
   background-color: #bb5c65;
+  -moz-animation: js 5s;
+  -o-animation: js 5s;
   -webkit-animation: js 5s;
-  /* Chrome, Safari, Opera */
   animation: js 5s; }
 
+@-moz-keyframes js {
+  0% {
+    height: 103px; }
+  50% {
+    height: 60px; }
+  100% {
+    height: 40px; } }
 @-webkit-keyframes js {
   0% {
     height: 103px; }

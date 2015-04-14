@@ -52,7 +52,7 @@
 	}
 }
 
-.project-info {
+.project-name {
   height: 100%;
   padding: 60px;
   position: absolute;
@@ -71,14 +71,14 @@
   @extend %item-transition;
   &:hover {
   	box-shadow: inset  0 0 0 126px rgba(153,100,106,0.9), 0 1px 3px rgba(0,0,0,0.8);
-  	.project-info {
+  	.project-name {
 		  opacity: 1;
 		  @include scale(1);
     }
   }
 }
 
-.project-json {
+.project-section {
   -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
@@ -126,7 +126,7 @@
   width: 821px;
 }
 
-.project-style {
+.project-info {
   h2 {
     font-family: $text-sans;
     margin-top: 3%;

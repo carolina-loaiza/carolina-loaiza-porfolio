@@ -29,3 +29,22 @@
   -ms-transform: scale($number);
   transform: scale($number);
 }
+
+// Skills box animation
+@mixin box-animation($height, $name){
+  width: 103px;
+  height: $height;
+  margin-top: -103px;
+  background-color: #bb5c65;
+  -moz-animation: $name 5s;
+  -o-animation: $name 5s;
+  -webkit-animation: $name 5s; 
+  animation: $name 5s;
+}
+
+// Skills box animation-keyframes
+@mixin box-animation-keyframes($zero, $half, $complete){
+  0%   {height: $zero }
+  50%  {height: $half }
+  100% {height: $complete }
+}

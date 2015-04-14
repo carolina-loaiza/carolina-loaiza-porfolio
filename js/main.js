@@ -8,7 +8,7 @@ showProject.administrador = function(data) {
 
     function showInfo() {
       //busca todos los div con class = project-info
-      var currentItem = document.querySelectorAll('.project-info');
+      var currentItem = document.querySelectorAll('.project-name');
       for (var i = 0; i < currentItem.length; i++) {
         //muestra la informacion con click;
         currentItem[i].onclick = function() {

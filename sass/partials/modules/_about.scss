@@ -35,7 +35,8 @@
 	}
 	footer {
 		background: none;
-    margin-top: 24px;
+    margin-top: 13px;
+    font-style: italic;
 	}
 }
 
@@ -53,7 +54,9 @@
 	margin-right: 20px;
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Estilos de Skills bars
+//
 
 .box-skill {
   width: 103px;
@@ -64,6 +67,16 @@
   fill: none;
   stroke: #fff;
   stroke-width: 2;
+}
+
+// Skills box animation-keyframes Cuadrado
+@-moz-keyframes draw {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @-webkit-keyframes draw {
@@ -85,47 +98,44 @@
   background-color: #fff;
 }
 
+// Skills box animation Html5
 .box-animation-html5 {
-  width: 103px;
-  height: 35px;
-  margin-top: -103px;
-  background-color: #bb5c65;
-  -webkit-animation: htmlcinco 5s; /* Chrome, Safari, Opera */
-  animation: htmlcinco 5s;
+  @include box-animation(35px, htmlcinco)
+}
+
+// Skills box animation-keyframes
+@-moz-keyframes htmlcinco {
+  @include box-animation-keyframes(103px, 80px, 35px)
 }
 
 @-webkit-keyframes htmlcinco {
-  0%   {height: 103px;}
-  50%  {height: 80px;}
-  100% {height: 35px;}
+  @include box-animation-keyframes(103px, 80px, 35px)
 }
 
+// Skills box animation css3
 .box-animation-css3 {
-  width: 103px;
-  height: 20px;
-  margin-top: -103px;
-  background-color: #bb5c65;
-  -webkit-animation: csstres 5s; /* Chrome, Safari, Opera */
-  animation: csstres 5s;
+  @include box-animation(20px, csstres)
+}
+
+// Skills box animation-keyframes 
+@-moz-keyframes csstres {
+  @include box-animation-keyframes(103px, 60px, 20px)
 }
 
 @-webkit-keyframes csstres {
-  0%   {height: 103px;}
-  50%  {height: 60px;}
-  100% {height: 20px;}
+  @include box-animation-keyframes(103px, 60px, 20px)
 }
 
+// Skills box animation javascript
 .box-animation-js {
-  width: 103px;
-  height: 40px;
-  margin-top: -103px;
-  background-color: #bb5c65;
-  -webkit-animation: js 5s; /* Chrome, Safari, Opera */
-  animation: js 5s;
+  @include box-animation(40px, js)
+}
+
+// Skills box animation-keyframes
+@-moz-keyframes js {
+  @include box-animation-keyframes(103px, 60px, 40px)
 }
 
 @-webkit-keyframes js {
-  0%   {height: 103px;}
-  50%  {height: 60px;}
-  100% {height: 40px;}
+  @include box-animation-keyframes(103px, 60px, 40px)
 }
