@@ -457,6 +457,9 @@ header {
   height: 103px;
   background-color: #fff; }
 
+.hidden-animation {
+  display: none; }
+
 .box-animation-html5 {
   width: 103px;
   height: 35px;

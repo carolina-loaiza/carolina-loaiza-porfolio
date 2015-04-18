@@ -71,22 +71,64 @@ showProject.administrador = function(data) {
 // leftColumnTitle: "id" = es el nombre de la primera columna de la hoja de calculo.
 briefcase.getJSON({ leftColumnTitle: "id" }, showProject.administrador);
 
-//Funcion para obtener la posicion de un elemento
-/*
-function getElementTopLeft(idi) {
-  var ele = document.getElementById(idi);
-  var top = 0;
-  var left = 0;
-  while (ele.tagName != "BODY") {
-    top += ele.offsetTop;
-    left += ele.offsetLeft;
-    ele = ele.offsetParent;
-  }
-  return {
-    top: top,
-    left: left
+
+window.addEventListener("scroll", function(event) {
+  var left = this.scrollY;
+  if (left > 1550) {
+    document.getElementById("skills-bars").classList.remove('hidden-animation');
   };
+}, false);
+
+
+document.getElementById("submit-button").onclick = function() {
+
+  var chars = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
+  name_value = document.getElementById("name").value;
+  email_value = document.getElementById("email").value;
+  comment_value = document.getElementById("comment").value;
+  array_values = [];
+
+  if(name_value == null || name_value.length == 0 || /^\s+$/.test(name_value)){
+    alert('Nombre invalido');
+    return false;
+  }else{
+    array_values.push(name_value);
+  }
+  if(email_value == null || email_value.length == 0 || chars.test(email_value) || /^\s+$/.test(email_value)){
+    alert('Email invalido');
+    return false;
+  }else{
+    array_values.push(email_value);
+  }
+  if(comment_value == null || comment_value.length == 0 || /^\s+$/.test(comment_value)){
+    alert('Escribe un mensaje');
+    return false;
+  } else {
+    array_values.push(comment_value);
+    alert('El mensage fue enviado exitosamente, Gracias!');
+    document.getElementById("form-contact").reset();
+    console.log("Contenido del formulario listo para enviar ", array_values);
+    return false;
+  }
 }
-var TopLeft = getElementTopLeft("project-info");
-console.log(TopLeft.top + ', ' + TopLeft.left);
-*/
+
+
+
+
+// a new class object
+var Hobbit = function(n){
+  // class variable to hold the name
+  this.name = n;
+};
+
+// adding method sayName
+Hobbit.prototype.sayName = function(){
+  console.log(this.name);
+}
+
+
+
+
+
+
+
