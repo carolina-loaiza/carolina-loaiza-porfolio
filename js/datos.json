@@ -9,7 +9,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/01.png",
+			"img1": "img/project-wiki/wiki-01.png",
+			"img2": "img/project-wiki/wiki-02.png",
+			"img3": "img/project-wiki/wiki-03.png"
 		},{
 			"id": 2,
 			"nombre":"Artesanias El Cuervo",
@@ -19,7 +21,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/04.png"
+			"img1": "img/01.png",
+			"img2": "img/01.png",
+			"img3": "img/01.png"
 		},{
 			"id": 3,
 			"nombre":"The Last Activist",
@@ -29,7 +33,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/04.png"
+			"img1": "img/01.png",
+			"img2": "img/01.png",
+			"img3": "img/01.png"
 		},{
 			"id": 4,
 			"nombre":"La Iluminada",
@@ -39,7 +45,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/04.png"
+			"img1": "img/project-laIluminada/lailuminada-01.png",
+			"img2": "img/project-laIluminada/lailuminada-02.png",
+			"img3": "img/project-laIluminada/lailuminada-03.png"
 		},{
 			"id": 5,
 			"nombre":"Hecho x Mi",
@@ -49,7 +57,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/04.png"
+			"img1": "img/project-hechoxMi/hechoxmi-01.png",
+			"img2": "img/project-hechoxMi/hechoxmi-02.png",
+			"img3": "img/project-hechoxMi/hechoxmi-03.png"
 		},{
 			"id": 6,
 			"nombre":"SunTime",
@@ -59,7 +69,9 @@
 			impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
 			los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
 			sino que tambien ingresó ",
-			"img": "img/04.png"
+			"img1": "img/project-sunTime/suntime-01.png",
+			"img2": "img/project-sunTime/suntime-02.png",
+			"img3": "img/project-sunTime/suntime-03.png"
 		}
 	]
 }

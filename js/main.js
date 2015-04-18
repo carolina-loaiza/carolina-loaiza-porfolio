@@ -98,21 +98,21 @@ showProject.administrador = function(data) {
       return this;
     });
 
-    if ( nameInput.value === null  || /^\s+$/.test(nameInput.value) || typeof nameInput.value !== 'string' ) {
+    if ( nameInput.value  === ""  || /^\s+$/.test(nameInput.value) || typeof nameInput.value !== 'string' ) {
       nameInput.errorInput("Nombre Invalido").errorColor("red")
       return false;
     } else {
       array_values.push(nameInput.value);
     }
 
-    if (emailInput === null || typeof emailInput !== "string") {
+    if (emailInput.value === "" || typeof emailInput.value !== "string") {
       emailInput.errorInput("Email Invalido").errorColor("red");
       return false;
     }else {
       array_values.push(emailInput);
     }
 
-    if (commentText.value == " " || /^\s+$/.test(commentText.value) ) {
+    if (commentText.value === "" || /^\s+$/.test(commentText.value) ) {
       commentText.errorInput("Deja un mensaje").errorColor("red");
       return false;
     } else {
