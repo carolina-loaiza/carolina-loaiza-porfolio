@@ -105,7 +105,7 @@ showProject.administrador = function(data) {
       array_values.push(nameInput.value);
     }
 
-    if (emailInput.value === "" || typeof emailInput.value !== "string") {
+    if (emailInput.value === "" || typeof emailInput.value !== "string" || !(emailInput).match(regEx) ) {
       emailInput.errorInput("Email Invalido").errorColor("red");
       return false;
     }else {
@@ -130,7 +130,6 @@ showProject.administrador = function(data) {
 briefcase.getJSON({ leftColumnTitle: "id" }, showProject.administrador );
 // Clean form.
 function message(input) {
-  console.log(input.value)
   if(input.value == "Nombre Invalido" || input.value == "Email Invalido" || input.value == "Deja un mensaje") {
     input.value = '';
     input.style.color = "#bb5c65";
