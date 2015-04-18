@@ -233,12 +233,12 @@
       <section class="contact">
         <!-- Start Contact section -->
         <form id="form-contact" action="#">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Nombre Completo" value="" required>
+          <label for="name" >Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Nombre Completo" value=" "  onfocus="message(this)"  required>
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Correo electrónico" value="" required>
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" value=" " onfocus="message(this)" required>
           <label for="comment">Mensaje</label>
-          <textarea name="comment" id="comment" placeholder="Ingrese aqui su comentario" cols="20" rows="10" required></textarea>
+          <textarea name="comment" id="comment" placeholder="Ingrese aqui su comentario" cols="20" rows="10" onfocus="message(this)" required></textarea>
           <input id="submit-button" class="button" type="submit" value="Enviar">
         </form>
         <div class="contact-info">
