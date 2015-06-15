@@ -1,10 +1,26 @@
 var showProject = {};
 
 showProject.administrador = function(data) {
+
+  //Funcion para obtener la posicion de un elemento
+  function elementPosition(idi) {
+    var ele = document.getElementById(idi);
+    var top = 0;
+    while (ele.tagName != "BODY") {
+      top += ele.offsetTop;
+      ele = ele.offsetParent;
+    }
+    return {
+      top: top
+    };
+  }
+
+  var TopLeft = elementPosition("project-info"); //"project-info" = div que quiero saber la posicion
+  console.log(TopLeft.top);
   //Muestra animacion cuando el scroll de la pagina esta en sobre mi
   window.addEventListener("scroll", function(event) {
     var left = this.scrollY;
-    if (left > 1555) {
+    if (left > TopLeft.top) {
       document.getElementById("skills-bars").classList.remove('hidden-animation');
     }
   });
@@ -27,8 +43,8 @@ showProject.administrador = function(data) {
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
         var data = JSON.parse(request.responseText);
-        console.log(data.project[0].id)
-        //showInfo(data)
+        //console.log(data.project[0].id)
+        showInfo(data)
       } else {
          console.log("We reached our target server, but it returned an error")
       }
@@ -39,21 +55,22 @@ showProject.administrador = function(data) {
     request.send();
   }
 
-  function showInfo() {
+  function showInfo(data) {
     //busca todos los div con class = project-info
     var currentItem = document.querySelectorAll('.project-name');
     for (var i = 0; i < currentItem.length; i++) {
       //muestra la informacion con click;
       currentItem[i].onclick = function() {
+        console.log(currentItem[i])
         //hace scroll a la section de project-info;
-        scrollWin(231, 1580)
+        scrollWin(231, 1580);
         document.getElementById("close").classList.add('display-button');
         var id = this.id;
         var contenido = "";
         contenido +=
-        '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data[id].categories[3].value + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
-        '<h2>' + data[id].categories[0].value + '<span>' + data[id].categories[1].value + '</span></h2>' +
-        '<div class="info-project"><p>' + data[id].categories[2].value + '</p></div>';
+        '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data.project[id].img1 + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
+        '<h2>' + data.project[id].name + '<span>' + data.project[id].type + '</span></h2>' +
+        '<div class="info-project"><p>' + data.project[id].info + '</p></div>';
         var contentInfo = document.getElementById('project-info');
         contentInfo.innerHTML = contenido;
         //cerrar la section proyect info;
@@ -65,9 +82,9 @@ showProject.administrador = function(data) {
         }
         //Gallery json array
         var imageGallery = [
-          data[id].categories[3].value,
-          data[id].categories[4].value,
-          data[id].categories[5].value
+          data.project[id].img1,
+          data.project[id].img2,
+          data.project[id].img3
         ];
 
         var imgCount = 0;
@@ -141,11 +158,8 @@ showProject.administrador = function(data) {
       return false;
     }
   }
-}
+}();
 
-// Briefcase.js hace el llamado a la hoja de Calculo mediante Ajax( XMLHttpRequest ) después lo convierte en un json mas fácil de usar.
-// leftColumnTitle: "id" = es el nombre de la primera columna de la hoja de calculo.
-briefcase.getJSON({ leftColumnTitle: "id" }, showProject.administrador );
 // Clean form.
 function message(input) {
   if(input.value == "Nombre Invalido" || input.value == "Email Invalido" || input.value == "Deja un mensaje") {
