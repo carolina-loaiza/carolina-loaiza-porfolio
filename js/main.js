@@ -21,6 +21,24 @@ showProject.administrador = function(data) {
     this.scrollTo(x, y)
   }
 
+  function loadJSON() { 
+    var request = new XMLHttpRequest();
+    request.open('GET', 'js/datos.json', true);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        var data = JSON.parse(request.responseText);
+        console.log(data.project[0].id)
+        //showInfo(data)
+      } else {
+         console.log("We reached our target server, but it returned an error")
+      }
+    };
+    request.onerror = function() {
+       console.log("There was a connection error of some sort")
+    };
+    request.send();
+  }
+
   function showInfo() {
     //busca todos los div con class = project-info
     var currentItem = document.querySelectorAll('.project-name');
@@ -76,7 +94,7 @@ showProject.administrador = function(data) {
       }
     }
   }
-  showInfo();
+  loadJSON();
   // Validacion del Form de Contacto.
   var form = document.getElementById("form-contact")
   var nameInput = document.getElementById("name");
