@@ -17,14 +17,14 @@ showProject.administrador = function(data) {
 
   var TopLeft = elementPosition("project-info"); //"project-info" = div que quiero saber la posicion
   console.log(TopLeft.top);
-  //Muestra animacion cuando el scroll de la pagina esta en sobre mi
+  /*Muestra animacion cuando el scroll de la pagina esta en sobre mi
   window.addEventListener("scroll", function(event) {
     var left = this.scrollY;
     if (left > TopLeft.top) {
       document.getElementById("skills-bars").classList.remove('hidden-animation');
     }
   });
-
+  */
   //Augmenting
   Function.prototype.method = function(name, func) {
     if (!this.prototype[name]) {
@@ -68,9 +68,9 @@ showProject.administrador = function(data) {
         var id = this.id;
         var contenido = "";
         contenido +=
-        '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data.project[id].img1 + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>' +
-        '<h2>' + data.project[id].name + '<span>' + data.project[id].type + '</span></h2>' +
-        '<div class="info-project"><p>' + data.project[id].info + '</p></div>';
+        '<h2>' + data.project[id].name + ' /  <span>' + data.project[id].type + '</span></h2>' +
+        '<div class="info-project"><p>' + data.project[id].info + '</p></div>'+
+        '<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data.project[id].img1 + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
         var contentInfo = document.getElementById('project-info');
         contentInfo.innerHTML = contenido;
         //cerrar la section proyect info;

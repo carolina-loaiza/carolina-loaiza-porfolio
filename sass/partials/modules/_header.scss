@@ -7,48 +7,66 @@ header {
 }
 
 .header-content {
-  color: #fff;
-  padding: 13% 0 1% 0;
+  color: $text;
+  padding: 18% 0 1% 0;
   text-align: center;
   p{
-    @include font-size(24);
+    @include font-size(26);
     font-weight: normal;
-  }
-  h2 {
-    @include font-size(40);
-    margin: 0;
-    &:before, &:after {
-      background-color: $text;
-      content: "";
-      display: inline-block;
-      height: 2px;
-      vertical-align: super;
-      width: 10%;
-    }
-    &:before {
-      margin: 0 2% 0 -50%;
-    }
-    &:after {
-      margin: 0 -50% 0 2%;
-    }
-  }
-  h3 {
-    @include font-size(60);
-  }
-  a{
-    display: inline-block;
-    padding-top: 200px;
     span {
-      border-right: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      display:block;
-      height: 12px;
-      margin-left: 75px;
-      -ms-transform: rotate(45deg); 
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);   
-      width: 12px;
-     
+      @include font-size(40);
+      font-family: $title-cursive;
+      padding-left: 15px;
     }
+  }
+}
+
+.portrait {
+  background: #ddd;
+  border-radius: 50%;
+  border: 5px solid #99646a;
+  display: inline-block;
+  height: 215px;
+  margin: 0; 
+  margin-bottom: -135px;
+  margin-left: -370px;
+  width: 215px;
+}
+
+//
+// Estilos para la navegación
+//
+
+nav {
+  ul {
+    padding: 0;
+  }
+  a:hover {
+    color: $text-secondary;
+    background-color: $background-nav;
+  }
+
+}
+
+// Navegación principal
+.main-nav {
+
+  li {
+    vertical-align: top;
+  }
+  a {
+    color: $text;
+    display: block;
+    font-family: $text-sans;
+    height: 70px;
+    line-height: 66px;
+    padding: 0 30px;
+  }
+  // Enlace a Inicio/Logo
+  li:first-child a {
+    background: url(../img/logo-small.png) no-repeat top;
+    margin-right: 635px;
+    width: 150px;
+    @extend %text-hidden;
   }
 }

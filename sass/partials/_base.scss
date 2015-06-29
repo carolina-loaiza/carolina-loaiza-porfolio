@@ -7,7 +7,7 @@
 }
 
 a {
-  color: $text;
+  color: #fff;
   font-family: $text-sans;
   font-weight: normal;
   @include font-size(18);
@@ -16,7 +16,7 @@ a {
 
 body {
   background-color: $background-color;
-  color: $text;
+  color: #fff;
   margin: 0;
   overflow-x: hidden;
 }

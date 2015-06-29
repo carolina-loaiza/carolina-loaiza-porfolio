@@ -4,7 +4,6 @@
 
 .app-vector {
   background: url(../img/background/app-vector.png) no-repeat center center;
-  float: right;
   height: 610px;
   padding: 56px 30px;
   width: 339px; 
@@ -34,8 +33,7 @@
 }
 
 .info-project {
-  float: left;
-  width: 30%;
+
 }
 
 .projects {
@@ -70,7 +68,7 @@
   position: relative;
   @extend %item-transition;
   &:hover {
-  	box-shadow: inset  0 0 0 126px rgba(153,100,106,0.9), 0 1px 3px rgba(0,0,0,0.8);
+  	box-shadow: inset  0 0 0 126px rgba(136,106,104,0.9), 0 1px 3px rgba(0,0,0,0.8);
   	.project-name {
 		  opacity: 1;
 		  @include scale(1);
@@ -114,13 +112,11 @@
 }
 
 .slider-project {
-  float: right;
   margin: 3% 0;
 }
 
 .web-vector {
   background: url(../img/background/web-vector.png) no-repeat;
-  float: right;
   height: 576px; 
   overflow: hidden;
   width: 821px;
@@ -132,9 +128,9 @@
     margin-top: 3%;
   }
   span {
-    display: block;
+    vertical-align: middle;
     font-family: $title-cursive;
-    @include font-size(24);
+    @include font-size(30);
   }
 }
 
