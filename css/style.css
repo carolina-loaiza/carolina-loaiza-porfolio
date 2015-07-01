@@ -236,9 +236,12 @@ nav a:hover {
   line-height: 66px;
   padding: 0 30px; }
 .main-nav li:first-child a {
-  background: url(../img/logo-small.png) no-repeat top;
+  background: url(../img/logo-small.png) no-repeat center bottom;
   margin-right: 635px;
   width: 150px; }
+
+.app-right {
+  float: right; }
 
 .app-vector {
   background: url(../img/background/app-vector.png) no-repeat center center;
@@ -246,7 +249,8 @@ nav a:hover {
   padding: 63px 18px;
   width: 348px;
   float: left;
-  margin: 0 10% 0 10%; }
+  margin: 0 10% 0 10%;
+  overflow: hidden; }
 
 .close-project-section {
   display: none;

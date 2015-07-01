@@ -50,7 +50,6 @@ nav {
 
 // Navegación principal
 .main-nav {
-
   li {
     vertical-align: top;
   }
@@ -64,7 +63,7 @@ nav {
   }
   // Enlace a Inicio/Logo
   li:first-child a {
-    background: url(../img/logo-small.png) no-repeat top;
+    background: url(../img/logo-small.png) no-repeat center bottom;
     margin-right: 635px;
     width: 150px;
     @extend %text-hidden;

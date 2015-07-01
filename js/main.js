@@ -3,13 +3,14 @@ var showProject = (function () {
 
   var closeButton = document.getElementById("close");
   var contentInfo = document.getElementById('project-info');
-  var buttonNext;
-  var buttonPrevious;
-  var imgContainer;
   var form = document.getElementById("form-contact")
   var nameInput = document.getElementById("name");
   var emailInput = document.getElementById("email");
   var commentText = document.getElementById("comment");
+  var buttonNext;
+  var buttonPrevious;
+  var imgContainer;
+  var imgContainer2;
 
   //Funcion para obtener la posicion de un elemento
   function elementPosition(idi) {
@@ -61,7 +62,7 @@ var showProject = (function () {
         var contenido = "";
         contenido += '<h2>' + data.project[id].name + ' /  <span>' + data.project[id].type + '</span></h2> <p>' + data.project[id].info + '</p>';
         if (data.project[id].type == "App") {
-          contenido +='<div class="slider-project"><div class="app-vector"><img id="slider" src="#"></div><div class="app-vector"><img id="slider" src="#"></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
+          contenido +='<div class="slider-project"><div class="app-vector"><img id="slider" src="' + data.project[id].img1 + '"></div><div class="app-vector"><img class="app-right" id="slider2" src="' + data.project[id].img1 + '"></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
         }else {
           contenido +='<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data.project[id].img1 + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
         }
@@ -92,6 +93,7 @@ var showProject = (function () {
     buttonNext = document.getElementById("button-next");
     buttonPrevious = document.getElementById("button-previous");
     imgContainer = document.getElementById("slider");
+    imgContainer2 = document.getElementById("slider2");
     //Augment
     Element.method('cambiarSrc', function(c) {
       this.src = c;
@@ -102,11 +104,13 @@ var showProject = (function () {
       imgCount++;
       if (imgCount > totalImgs) imgCount = 0
       imgContainer.cambiarSrc(imageGallery[imgCount]);
+      if ( imgContainer2 != null ) imgContainer2.cambiarSrc(imageGallery[imgCount]);
     }
     buttonPrevious.onclick = function() {
       imgCount--;
       if (imgCount < 0) imgCount = totalImgs;
       imgContainer.cambiarSrc(imageGallery[imgCount]);
+      if ( imgContainer2 != null ) imgContainer2.cambiarSrc(imageGallery[imgCount]);
     }
   }
 
