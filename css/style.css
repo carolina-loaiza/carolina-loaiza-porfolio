@@ -242,9 +242,11 @@ nav a:hover {
 
 .app-vector {
   background: url(../img/background/app-vector.png) no-repeat center center;
-  height: 610px;
-  padding: 56px 30px;
-  width: 339px; }
+  height: 678px;
+  padding: 63px 18px;
+  width: 348px;
+  float: left;
+  margin: 0 10% 0 10%; }
 
 .close-project-section {
   display: none;
@@ -260,7 +262,7 @@ nav a:hover {
 
 .hideScrollBar {
   background-color: #856d6d;
-  height: 88%;
+  height: 91%;
   margin: 48px 15px 0 15px;
   overflow-x: hidden;
   width: 101%; }
@@ -336,9 +338,10 @@ nav a:hover {
 
 .web-vector {
   background: url(../img/background/web-vector.png) no-repeat;
-  height: 576px;
+  height: 702px;
   overflow: hidden;
-  width: 821px; }
+  width: 1000px;
+  margin: 0 auto; }
 
 .project-info h2 {
   font-family: "Josefin Sans", sans-serif;
