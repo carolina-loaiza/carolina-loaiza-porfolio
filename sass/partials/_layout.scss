@@ -8,32 +8,21 @@ footer {
 
 .about-me {
   background-color: $section-about;
-  .about-info, .comments{
-    @extend %container;
-  }
 }
 
 .background-image {
   @extend %background-image;
-  .contact {
-    @extend %container;
-  }	
 }
 
-.main-nav ul {
-  @extend %container;
-}
 
 .projects {
   background-color: $section-project;
   ul {
     padding: 11% 0 13% 0;
-    @extend %container;
   }
 }
 
 .project-info {
   color: $section-project;
-  @extend %container;
 }
 

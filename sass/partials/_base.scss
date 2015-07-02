@@ -19,6 +19,7 @@ body {
   color: #fff;
   margin: 0;
   overflow-x: hidden;
+  font-weight: 100;
 }
 
 blockquote {
@@ -128,6 +129,11 @@ form {
   }
 }
 
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  overflow: hidden;
+}
 
 // Placeholder hidden
 ::-webkit-input-placeholder { 

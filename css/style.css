@@ -1,9 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Satisfy);
-.about-me .about-info, .about-me .comments, .background-image .contact, .main-nav ul, .projects ul, .project-info {
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow: hidden; }
-
 .background-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -49,7 +44,8 @@ body {
   background-color: #f2f2f2;
   color: #fff;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-weight: 100; }
 
 blockquote {
   margin: 0;
@@ -130,6 +126,11 @@ form {
   form .button {
     width: 100px;
     float: right; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden; }
 
 ::-webkit-input-placeholder {
   color: transparent; }
@@ -371,11 +372,9 @@ nav a:hover {
   width: 16px; }
 
 .about-info {
-  color: #fff; }
-  .about-info p {
-    margin: 0 auto;
-    padding-bottom: 70px;
-    width: 700px; }
+  margin: 0 auto;
+  padding-bottom: 70px;
+  width: 700px; }
   .about-info span {
     display: block;
     font-family: "Satisfy", cursive;
