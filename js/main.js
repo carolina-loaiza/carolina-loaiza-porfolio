@@ -160,7 +160,6 @@ var showProject = (function () {
   return {
     loadProjects : loadJSON,
     validationForm : validationForm
-
   };
 
 })();
