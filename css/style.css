@@ -248,6 +248,22 @@ nav a:hover {
   margin-right: 635px;
   width: 150px; }
 
+.project-copy {
+  width: 300px;
+  float: left;
+  margin: 2% 0 2% 10%; }
+
+.project-images {
+  margin-left: 30%;
+  overflow: hidden;
+  width: 980px;
+  margin-bottom: 5%; }
+
+.images-container {
+  overflow: auto;
+  height: 1000px;
+  margin-right: -50px; }
+
 .app-right {
   float: right; }
 

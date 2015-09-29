@@ -60,12 +60,7 @@ var showProject = (function () {
         closeButton.classList.add('display-button');
         var id = this.id;
         var contenido = "";
-        contenido += '<h2>' + data.project[id].name + ' /  <span>' + data.project[id].type + '</span></h2> <p>' + data.project[id].info + '</p>';
-        if (data.project[id].type == "App") {
-          contenido +='<div class="slider-project"><div class="app-vector"><img id="slider" src="' + data.project[id].img1 + '"></div><div class="app-vector"><img class="app-right" id="slider2" src="' + data.project[id].img1 + '"></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
-        }else {
-          contenido +='<div class="slider-project"><div class="web-vector"><div class="hideScrollBar"><img id="slider" src="' + data.project[id].img1 + '"></div></div><div class="slider-button"><button id="button-previous"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button><button id="button-next"><svg width="16px" height="25px"><path style="fill:#856D6D;" d="M0,11.253L15.469,0v3.25L2.434,12.477v0.095l13.036,9.179V25L0,13.794V11.253z"/></svg></button></div></div>';
-        }
+        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name + ' /  <span>' + data.project[id].type + '</span></h2> <p>' + data.project[id].info + '</p></div><div id="project-images" class="project-images"><div class="images-container"><img src="'+ data.project[id].img1 +'"><img src="'+ data.project[id].img2 +'"><img src="'+ data.project[id].img3 +'></div></div>';
         contentInfo.innerHTML = contenido;
         var infoPosition = elementPosition("close"); 
         scrollWin(231, infoPosition.top);
@@ -75,42 +70,7 @@ var showProject = (function () {
           var projectPosition = elementPosition("projects"); 
           scrollWin(231, projectPosition.top);
         }
-        sliderButton(data, id);
       }
-    }
-  }
-
-  function sliderButton(data, id){
-    //Gallery json array
-    var imageGallery = [
-      data.project[id].img1,
-      data.project[id].img2,
-      data.project[id].img3
-    ];
-
-    var imgCount = 0;
-    var totalImgs = imageGallery.length - 1;
-    buttonNext = document.getElementById("button-next");
-    buttonPrevious = document.getElementById("button-previous");
-    imgContainer = document.getElementById("slider");
-    imgContainer2 = document.getElementById("slider2");
-    //Augment
-    Element.method('cambiarSrc', function(c) {
-      this.src = c;
-      return this;
-    });
-    //Botones del slider
-    buttonNext.onclick = function() {
-      imgCount++;
-      if (imgCount > totalImgs) imgCount = 0
-      imgContainer.cambiarSrc(imageGallery[imgCount]);
-      if ( imgContainer2 != null ) imgContainer2.cambiarSrc(imageGallery[imgCount]);
-    }
-    buttonPrevious.onclick = function() {
-      imgCount--;
-      if (imgCount < 0) imgCount = totalImgs;
-      imgContainer.cambiarSrc(imageGallery[imgCount]);
-      if ( imgContainer2 != null ) imgContainer2.cambiarSrc(imageGallery[imgCount]);
     }
   }
 
