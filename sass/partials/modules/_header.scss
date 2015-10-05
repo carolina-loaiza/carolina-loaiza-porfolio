@@ -14,7 +14,7 @@ header {
     @include font-size(26);
     font-weight: normal;
     span {
-      @include font-size(40);
+      @include font-size(48);
       font-family: $title-cursive;
       padding-left: 15px;
     }

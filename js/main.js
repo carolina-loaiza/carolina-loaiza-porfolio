@@ -54,13 +54,14 @@ var showProject = (function () {
   }
 
   function showInfo(data) {
-    var currentItem = document.querySelectorAll('.project-name');
+    var currentItem = document.querySelectorAll('.project-id');
     for (var i = 0; i < currentItem.length; i++) {
       currentItem[i].onclick = function() {
         closeButton.classList.add('display-button');
         var id = this.id;
         var contenido = "";
-        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name + ' /  <span>' + data.project[id].type + '</span></h2> <p>' + data.project[id].info + '</p></div><div id="project-images" class="project-images"><div class="images-container"><img src="'+ data.project[id].img1 +'"><img src="'+ data.project[id].img2 +'"><img src="'+ data.project[id].img3 +'></div></div>';
+        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span><p>' + data.project[id].info + '</p><button class="button github">Github Code</button></div>'+
+        '<div id="project-images" class="project-images"><div class="images-container"><img src="'+ data.project[id].img1 +'"><img src="'+ data.project[id].img2 +'"><img src="'+ data.project[id].img3 +'></div></div>';
         contentInfo.innerHTML = contenido;
         var infoPosition = elementPosition("close"); 
         scrollWin(231, infoPosition.top);
@@ -126,9 +127,6 @@ var showProject = (function () {
 
 showProject.loadProjects();
 
-document.getElementById("submit-button").onclick = function() {
-  showProject.validationForm();
-}
 // Clean form.
 function message(input) {
   if(input.value == "Nombre Invalido" || input.value == "Email Invalido" || input.value == "Deja un mensaje") {
