@@ -60,7 +60,7 @@ var showProject = (function () {
         closeButton.classList.add('display-button');
         var id = this.id;
         var contenido = "";
-        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span><p>' + data.project[id].info + '</p><button class="button github">Github Code</button></div>'+
+        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span><p>' + data.project[id].info + '</p><button class="github">Github Code</button></div>'+
         '<div id="project-images" class="project-images"><div class="images-container"><img src="'+ data.project[id].img1 +'"><img src="'+ data.project[id].img2 +'"><img src="'+ data.project[id].img3 +'></div></div>';
         contentInfo.innerHTML = contenido;
         var infoPosition = elementPosition("close"); 

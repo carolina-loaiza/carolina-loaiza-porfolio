@@ -145,16 +145,16 @@ input:-moz-placeholder {
   color: transparent; }
 
 .button {
+  margin-top: 1.5%;
   background: none;
   border: 2px solid #fff;
-  color: #ddd;
+  color: #fff;
   display: inline-block;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  margin-top: 10px;
   padding: 0.5em 1em;
-  width: inherit; }
+  font-weight: bold; }
 
 .social-media a {
   background: url(../img/social-net.png) no-repeat;
@@ -250,9 +250,10 @@ nav a:hover {
   width: 150px; }
 
 .project-copy {
-  width: 300px;
+  width: 22%;
+  padding-right: 2%;
   float: left;
-  margin: 2% 0 2% 10%; }
+  margin: 2% 0 2% 15%; }
 
 .project-copy span {
   display: block;
@@ -263,21 +264,31 @@ nav a:hover {
   font-size: 5rem; }
 
 .project-images {
-  margin-left: 30%;
   overflow: hidden;
-  width: 980px;
+  width: 50%;
+  max-width: 900px;
   margin-bottom: 5%; }
 
 .github {
+  margin-top: 8%;
+  background: none;
   border: 2px solid #886A68;
   color: #886A68;
-  font-weight: bold;
-  margin-top: 8%; }
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 0.5em 1em;
+  font-weight: bold; }
 
 .images-container {
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 1000px;
   margin-right: -50px; }
+
+.images-container img {
+  width: 95%; }
 
 .app-right {
   float: right; }
@@ -311,16 +322,16 @@ nav a:hover {
   width: 101%; }
 
 .projects li {
-  width: 31.5%;
+  width: 32%;
   height: 211px;
   margin: 0.5%; }
 .projects h4 {
   font-size: 20px;
   font-size: 2rem; }
 .projects p {
-  font-size: 28px;
-  font-size: 2.8rem;
-  font-size: 3.8rem; }
+  font-weight: 300;
+  font-size: 35px;
+  font-size: 3.5rem; }
 
 .section-title {
   font-size: 200px;
@@ -332,7 +343,7 @@ nav a:hover {
 
 .project-name {
   height: 100%;
-  padding: 20% 10%;
+  padding: 19% 10%;
   position: absolute;
   text-decoration: none;
   width: 100%;

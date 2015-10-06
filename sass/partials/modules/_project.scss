@@ -3,9 +3,10 @@
 //
 
 .project-copy {
-  width: 300px;
+  width: 22%;
+  padding-right: 2%;
   float: left;
-  margin: 2% 0 2% 10%;
+  margin: 2% 0 2% 15%;
 }
 .project-copy span{
   display: block;
@@ -18,23 +19,25 @@
 }
 
 .project-images {
-  margin-left: 30%;
   overflow: hidden;
-  width: 980px;
+  width: 50%;
+  max-width: 900px;
   margin-bottom: 5%;
 }
 
 .github {
-  border: 2px solid #886A68;
-  color: #886A68;
-  font-weight: bold;
   margin-top: 8%;
+  @include button(18, #886A68, #886A68);
 }
 
 .images-container{
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 1000px;
   margin-right: -50px;
+}
+.images-container img{
+  width: 95%;
 }
 
 .app-right {
@@ -76,16 +79,16 @@
 
 .projects {
 	li {
-    width: 31.5%;
-		height: 211px;
-  	margin: 0.5%;
+    width: 32%;
+    height: 211px;
+    margin: 0.5%;
 	}
 	h4 {
 		@include font-size(20);
 	}
 	p {
-		@include font-size(28);
-    font-size: 3.8rem;
+    font-weight: 300;
+		@include font-size(35);
 	}
 }
 
@@ -99,7 +102,7 @@
 
 .project-name {
   height: 100%;
-  padding: 20% 10%;
+  padding: 19% 10%;
   position: absolute;
   text-decoration: none;
   width: 100%;

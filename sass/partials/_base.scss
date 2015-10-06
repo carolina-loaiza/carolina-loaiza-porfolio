@@ -148,7 +148,8 @@ input:-moz-placeholder {
 
 // Button Descarga
 .button {
-  @include button(18);
+  margin-top: 1.5%;
+  @include button(18, #fff, #fff);
 }
 
 .social-media a {

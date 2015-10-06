@@ -3,16 +3,15 @@
 //
 
 // Button
-@mixin button($font-size, $text-color: #fff, $border-color: #fff) {
+@mixin button($font-size, $text-color, $border-color) {
   background: none;
   border: 2px solid $border-color;
-  color: $text;
+  color: $text-color;
   display: inline-block;
   font-family: $text-sans;
   @include font-size($font-size);
-  margin-top: 10px;
   padding: 0.5em 1em;
-  width: inherit;
+  font-weight: bold;
 }
 
 // font-size mixin
