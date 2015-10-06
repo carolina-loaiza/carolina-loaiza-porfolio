@@ -5,6 +5,7 @@
 			"name":"Our Heritage",
 			"type":"Sitio Web",
 			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "todavia nop",
 			"img1": "img/project-wiki/wiki-01.png",
 			"img2": "img/project-wiki/wiki-02.png",
 			"img3": "img/project-wiki/wiki-03.png"
@@ -13,6 +14,7 @@
 			"name":"Colectivo Furia Rosa",
 			"type":"Sitio Web",
 			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "todavia nop",
 			"img1": "img/01.png",
 			"img2": "img/01.png",
 			"img3": "img/01.png"
@@ -21,6 +23,7 @@
 			"name":"Hecho x Mi",
 			"type":"App",
 			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "invision",
 			"img1": "img/01.png",
 			"img2": "img/01.png",
 			"img3": "img/01.png"
@@ -28,7 +31,8 @@
 			"id": 4,
 			"name":"Guayaba Jam",
 			"type":"Sitio Web",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",			
+			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "https://github.com/karo-801chan/guayabaJam",		
 			"img1": "img/project-laIluminada/lailuminada-01.png",
 			"img2": "img/project-laIluminada/lailuminada-02.png",
 			"img3": "img/project-laIluminada/lailuminada-03.png"
@@ -37,14 +41,16 @@
 			"name":"Weather App",
 			"type":"App",
 			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "https://github.com/karo-801chan/Weather-App",
 			"img1": "img/project-hechoxMi/Style01.png",
 			"img2": "img/project-hechoxMi/Style02.png",
 			"img3": "img/project-hechoxMi/Style03.png"
 		},{
 			"id": 6,
-			"name":"Radio Player",
-			"type":"Sitio Web",
+			"name":"Music Player",
+			"type":"Web App",
 			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
+			"link": "https://github.com/karo-801chan/Music-Player",
 			"img1": "img/project-sunTime/suntime-01.png",
 			"img2": "img/project-sunTime/suntime-02.png",
 			"img3": "img/project-sunTime/suntime-03.png"
