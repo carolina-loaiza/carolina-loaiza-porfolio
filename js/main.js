@@ -3,14 +3,6 @@ var showProject = (function () {
 
   var closeButton = document.getElementById("close");
   var contentInfo = document.getElementById('project-info');
-  var form = document.getElementById("form-contact")
-  var nameInput = document.getElementById("name");
-  var emailInput = document.getElementById("email");
-  var commentText = document.getElementById("comment");
-  var buttonNext;
-  var buttonPrevious;
-  var imgContainer;
-  var imgContainer2;
 
   //Funcion para obtener la posicion de un elemento
   function elementPosition(idi) {
@@ -24,13 +16,6 @@ var showProject = (function () {
       top: top
     };
   }
-
-  Function.prototype.method = function(name, func) {
-    if (!this.prototype[name]) {
-      this.prototype[name] = func;
-    }
-    return this;
-  };
 
   function scrollWin(x, y) { 
     this.scrollTo(x, y)
@@ -74,39 +59,6 @@ var showProject = (function () {
       }
     }
   }
-
-  function validationForm(){
-    var chars = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/;
-    var regEx = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    array_values = [];
-
-    Element.method('errorInput', function(v) {
-      this.value = v;
-      return this;
-    });
-
-    Element.method('errorColor', function(c) {
-      this.style.color = c;
-      return this;
-    });
-
-    if ( nameInput.value  === ""  || /^\s+$/.test(nameInput.value) || typeof nameInput.value != 'string' ) {
-      nameInput.errorInput("Nombre Invalido").errorColor("red")
-      return false;
-    }
-    if (emailInput.value === "" || typeof emailInput.value != "string"  ) {
-      emailInput.errorInput("Email Invalido").errorColor("red");
-      return false;
-    }
-    if (commentText.value === "" || /^\s+$/.test(commentText.value) ) {
-      commentText.errorInput("Deja un mensaje").errorColor("red");
-      return false;
-    } else {
-      form.reset();
-      return false;
-    }
-  }
-
   
   //Muestra animacion cuando el scroll de la pagina esta en sobre mi
   /*
@@ -119,18 +71,9 @@ var showProject = (function () {
   */
 
   return {
-    loadProjects : loadJSON,
-    validationForm : validationForm
+    loadProjects : loadJSON
   };
 
 })();
 
 showProject.loadProjects();
-
-// Clean form.
-function message(input) {
-  if(input.value == "Nombre Invalido" || input.value == "Email Invalido" || input.value == "Deja un mensaje") {
-    input.value = '';
-    input.style.color = "#bb5c65";
-  }
-}
