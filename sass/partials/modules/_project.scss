@@ -115,7 +115,8 @@
 	height: 100%;
   padding: 0;
   position: relative;
-  box-shadow: inset  0 0 0 126px rgba(136,106,104,0.9), 0 1px 3px rgba(0,0,0,0.8);
+  box-shadow: inset  0 0 0 126px rgba(136,106,104,0.8), 0 1px 3px rgba(0,0,0,0.8);
+  background-size: cover;
   @extend %item-transition;
   &:hover {
   	box-shadow: none;
@@ -132,28 +133,28 @@
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
 }
 
-.project-wikipedia { 
-  background-image: url(../img/project-wiki/small-wiki.png);
+.project-colectivo { 
+  background-image: url(../img/project-colectivo/small-colectivo.png);
 }
 
-.project-artesanias { 
-  background-image: url(../img/project-elCuervo/small-elcuervo.png);
+.project-guayaba-jam { 
+  background-image: url(../img/project-guayabaJam/small-guayabaJam.png);
 }
 
-.project-last-activist { 
-  background-image: url(../img/project-thelastActivist/small-thelastActivist.png);
+.project-music-player { 
+  background-image: url(../img/project-musicPlayer/small-musicPlayer.png);
 }
 
-.project-la-iluminada { 
-  background-image: url(../img/project-laIluminada/small-laIluminada.png);
+.project-our-heritage { 
+  background-image: url(../img/project-ourHeritage/small-ourHeritage.png);
 }	
 
 .project-hechoxmi { 
   background-image: url(../img/project-hechoxMi/small-hechoxmi.png);
 }
 
-.project-suntime { 
-  background-image: url(../img/project-sunTime/small-suntime.png);
+.project-weather-app { 
+  background-image: url(../img/project-weatherApp/small-weatherApp.png);
 }
 
 .project-info {
