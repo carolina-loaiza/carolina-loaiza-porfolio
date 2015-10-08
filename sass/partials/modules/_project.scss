@@ -25,7 +25,7 @@
   margin-bottom: 5%;
 }
 
-.github {
+.link {
   margin-top: 8%;
   @include button(18, #886A68, #886A68);
 }
@@ -36,8 +36,15 @@
   height: 1000px;
   margin-right: -50px;
 }
+
 .images-container img{
   width: 95%;
+  margin-bottom: 4%;
+}
+
+.images-container-app img{
+  width: inherit;
+  margin: 2%;
 }
 
 .app-right {

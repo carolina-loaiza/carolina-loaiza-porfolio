@@ -6,7 +6,7 @@
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(134, 108, 108, 0.8); }
 
-button:focus, button:active, button:focus:active, form input:focus, form input:active, form input:focus:active, form textarea:focus, form textarea:active, form textarea:focus:active {
+button:focus, button:active, button:focus:active {
   box-shadow: none;
   outline: 0;
   -webkit-box-shadow: none; }
@@ -32,6 +32,10 @@ li {
 * {
   box-sizing: inherit; }
 
+ul, p {
+  margin: 0;
+  padding: 0; }
+
 a {
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
@@ -45,23 +49,6 @@ body {
   color: #fff;
   margin: 0;
   overflow-x: hidden; }
-
-blockquote {
-  margin: 0;
-  padding: 0 34px 0 45px;
-  position: absolute;
-  top: 10px;
-  text-align: right; }
-  blockquote p:before, blockquote p:after {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 50px;
-    position: absolute; }
-  blockquote p:before {
-    content: "\201C";
-    margin-left: -24px; }
-  blockquote p:after {
-    content: "\201D";
-    margin-left: 10px; }
 
 button {
   background: none;
@@ -94,55 +81,22 @@ li {
 p, pre {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
-  margin-bottom: 0.3em;
+  margin-bottom: 4%;
   font-size: 20px;
   font-size: 2rem; }
-
-ul, p {
-  margin: 0;
-  padding: 0; }
 
 footer h2 {
   -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
 
-form {
-  float: right;
-  margin-top: 7%;
-  width: 26%; }
-  form label {
-    width: 100%;
-    display: block; }
-  form input, form textarea {
-    font-family: "Josefin Sans", sans-serif;
-    color: #856d6d;
-    font-size: 18px;
-    font-size: 1.8rem;
-    width: 100%;
-    resize: none; }
-  form .button {
-    width: 100px;
-    float: right; }
+.contact-info p {
+  margin-bottom: 1%; }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden; }
-
-::-webkit-input-placeholder {
-  color: transparent; }
-
-::-moz-placeholder {
-  color: transparent; }
-
-/* firefox 19+ */
-:-ms-input-placeholder {
-  color: transparent; }
-
-/* ie */
-input:-moz-placeholder {
-  color: transparent; }
 
 .button {
   margin-top: 1.5%;
@@ -155,27 +109,6 @@ input:-moz-placeholder {
   font-size: 1.8rem;
   padding: 0.5em 1em;
   font-weight: bold; }
-
-.social-media a {
-  background: url(../img/social-net.png) no-repeat;
-  color: transparent;
-  display: block;
-  height: 187px;
-  margin-top: 10px; }
-
-.behance a {
-  background-position: right top;
-  margin-left: 28px;
-  width: 92px; }
-
-.facebook a {
-  background-position: left top;
-  width: 40px; }
-
-.invision a {
-  background-position: -38px top;
-  margin-left: 28px;
-  width: 58px; }
 
 footer {
   background: url("../img/background/background-footer.png") no-repeat;
@@ -269,7 +202,7 @@ nav a:hover {
   max-width: 900px;
   margin-bottom: 5%; }
 
-.github {
+.link {
   margin-top: 8%;
   background: none;
   border: 2px solid #886A68;
@@ -288,7 +221,12 @@ nav a:hover {
   margin-right: -50px; }
 
 .images-container img {
-  width: 95%; }
+  width: 95%;
+  margin-bottom: 4%; }
+
+.images-container-app img {
+  width: inherit;
+  margin: 2%; }
 
 .app-right {
   float: right; }

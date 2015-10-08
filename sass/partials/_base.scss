@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: #fff;
   font-family: $text-sans;
@@ -19,29 +24,6 @@ body {
   color: #fff;
   margin: 0;
   overflow-x: hidden;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0 34px 0 45px;
-  position: absolute;
-  top: 10px;
-  text-align: right;
-  p:before, p:after {
-    font-family: $text-sans;
-    font-size: 50px;
-    position: absolute;
-  }
-
-  p:before {
-    content: "\201C";
-    margin-left: -24px;
-  }  
-
-  p:after {
-    content: "\201D";
-    margin-left: 10px;
-  }
 }
 
 button {
@@ -83,13 +65,8 @@ li {
 p, pre{
   font-family: $text-sans;
   font-weight: 100;
-  margin-bottom: 0.3em;
+  margin-bottom: 4%;
   @include font-size(20);
-}
-
-ul, p {
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -102,28 +79,8 @@ footer h2 {
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
 }
 
-form {
-  float: right;
-  margin-top: 7%;
-  width: 26%;
-  label {
-    width: 100%;
-    display: block;
-  }
-  input, textarea {
-    font-family: $text-sans;
-    color: $text-secondary;
-    @include font-size(18);
-    width: 100%;
-    resize: none;
-    &:focus, &:active, &:focus:active {
-    @extend %blue-border;
-  }
-  }
-  .button {
-    width: 100px;
-    float: right;
-  }
+.contact-info p{
+  margin-bottom: 1%;
 }
 
 .container {
@@ -132,19 +89,7 @@ form {
   overflow: hidden;
 }
 
-// Placeholder hidden
-::-webkit-input-placeholder { 
-  color: transparent; 
-}
-::-moz-placeholder { 
-  color: transparent; 
-} /* firefox 19+ */
-:-ms-input-placeholder { 
-  color: transparent;  
-} /* ie */
-input:-moz-placeholder { 
-  color: transparent;  
-}
+
 
 // Button Descarga
 .button {
@@ -152,27 +97,4 @@ input:-moz-placeholder {
   @include button(18, #fff, #fff);
 }
 
-.social-media a {
-  background: url(../img/social-net.png) no-repeat;
-  color: transparent;
-  display: block;
-  height: 187px;
-  margin-top: 10px;
-}
 
-.behance a {
-  background-position:  right top;
-  margin-left: 28px;
-  width: 92px;
-}
-
-.facebook a {
-  background-position: left top;
-  width: 40px;
-}
-
-.invision a {
-  background-position: -38px top;
-  margin-left: 28px;
-  width: 58px;
-}
