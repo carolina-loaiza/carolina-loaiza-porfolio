@@ -4,51 +4,86 @@
 			"id": 1,
 			"name":"Our Heritage",
 			"type":"Sitio Web",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "todavia nop",
-			"image" : {
-				
-			}
+			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"link": [
+				"Web Site",
+				"https://github.com/karo-801chan/guayabaJam"
+			],
+			"image" : [
+				"img/project-ourHeritage/ourHeritage-01.png"
+			]
 		},{
 			"id": 2,
 			"name":"Colectivo Furia Rosa",
 			"type":"Sitio Web",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "todavia nop",
-			"image" : {
-			}
+			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"link": [
+				"Web Site",
+				"https://github.com/karo-801chan/guayabaJam"
+			],	
+			"image" : [
+				"img/project-colectivo/colectivo-01.jpg"
+			]
 		},{
 			"id": 3,
 			"name":"Hecho x Mi",
 			"type":"App",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "https://invis.io/J31TXCRFM",
-			"image" : {
-			}
+			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"link": [
+				"InVision",
+				"https://invis.io/J31TXCRFM"
+			],	
+			"image" : [
+				"img/project-hechoxMi/hechoxmi-01.png",
+				"img/project-hechoxMi/hechoxmi-02.png",
+				"img/project-hechoxMi/hechoxmi-03.png",
+				"img/project-hechoxMi/hechoxmi-04.png",
+				"img/project-hechoxMi/hechoxmi-05.png",
+				"img/project-hechoxMi/hechoxmi-06.png"
+			]
 		},{
 			"id": 4,
 			"name":"Guayaba Jam",
 			"type":"Sitio Web",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "https://github.com/karo-801chan/guayabaJam",		
-			"image" : {
-			}
+			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"link": [
+				"Github Code",
+				"https://github.com/carolina-loaiza/Guayaba-Jam"
+			],		
+			"image" : [
+				"img/project-project-hechoxMi/hechoxmi-01.png"
+			]
 		},{
 			"id": 5,
 			"name":"Weather App",
 			"type":"App",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "https://github.com/karo-801chan/Weather-App",
-			"image" : {
-			}
+			"info":"<p>La aplicación automáticamente muestra el pronóstico del tiempo de la ubicación actual y los siguientes tres días de la semana.También esta la opción de hacer una consulta por ciudad y país.</p><p>En este proyecto utilice el API publico de OpenWeatherMap, para obtener toda la información necesaria con respecto al clima. La información es consultada por medio de un llamado ajax y se muestra al usuario por medio de javascript.</p><p>Los iconos utilizados son una tipografía de uso libre.</p>",
+			"link": [
+				"Github Code",
+				"https://github.com/carolina-loaiza/Weather-App"
+			],
+			"image" : [
+				"img/project-weatherApp/weatherApp-01.png",
+				"img/project-weatherApp/weatherApp-02.png",
+				"img/project-weatherApp/weatherApp-03.png",
+				"img/project-weatherApp/weatherApp-04.png",
+				"img/project-weatherApp/weatherApp-05.png",
+				"img/project-weatherApp/weatherApp-06.png"
+			]
 		},{
 			"id": 6,
 			"name":"Music Player",
 			"type":"Web App",
-			"info":"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó ",
-			"link": "https://github.com/karo-801chan/Music-Player",
-			"image" : {
-			}
+			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p>",
+			"link": [
+				"Github Code",
+				"https://github.com/carolina-loaiza/Music-Player"
+			],
+			"image" : [
+				"img/project-musicPlayer/musicPlayer-01.png",
+				"img/project-musicPlayer/musicPlayer-02.png",
+				"img/project-musicPlayer/musicPlayer-03.png"
+			]
 		}
 	]
 }

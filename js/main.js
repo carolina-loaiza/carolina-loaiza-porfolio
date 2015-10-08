@@ -40,22 +40,40 @@ var showProject = (function () {
 
   function showInfo(data) {
     var currentItem = document.querySelectorAll('.project-id');
+
     for (var i = 0; i < currentItem.length; i++) {
+
       currentItem[i].onclick = function() {
         closeButton.classList.add('display-button');
         var id = this.id;
         var contenido = "";
-        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span><p>' + data.project[id].info + '</p><button class="github">Github Code</button></div>'+
-        '<div id="project-images" class="project-images"><div class="images-container"><img src="'+ data.project[id].img1 +'"><img src="'+ data.project[id].img2 +'"><img src="'+ data.project[id].img3 +'></div></div>';
+
+        //Muestra las imagenes
+        var imgContainer = "";
+        var cantImg = data.project[id].image.length
+        for (var i = 0; i < cantImg; i++) {
+          imgContainer += '<img src="'+ data.project[id].image[i] +'">';
+        }
+
+        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span>' + data.project[id].info + '<a href="' + data.project[id].link[1] + '" target="_blank" class="link">' + data.project[id].link[0] + '</a></div>'+
+        '<div id="project-images" class="project-images"><div class="images-container">' + imgContainer + '</div></div>';
         contentInfo.innerHTML = contenido;
-        var infoPosition = elementPosition("close"); 
+
+        if (data.project[id].type == 'App') {
+          document.getElementById('project-images').classList.add('images-container-app');
+        };
+
+        var infoPosition = elementPosition("close");
+
         scrollWin(231, infoPosition.top);
+
         closeButton.onclick = function() {
           contentInfo.innerHTML = "";
           closeButton.classList.remove('display-button');
           var projectPosition = elementPosition("projects"); 
           scrollWin(231, projectPosition.top);
         }
+
       }
     }
   }
