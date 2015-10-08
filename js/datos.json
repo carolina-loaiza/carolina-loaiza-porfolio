@@ -4,7 +4,7 @@
 			"id": 1,
 			"name":"Our Heritage",
 			"type":"Sitio Web",
-			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"info":"<p>Our Heritage es un videojuego sobre el cambió climático que se desarrollo en conjunto con varias empresas y organizaciones incluyendo al CETAV.</p><p>Para promocionar el videojuego se creo un equipo para desarrollar el sitio web. Nosotros utilizamos la metodologia Scrum para desarrollar el proyecto y cumplimos con varias etapas de elaboración de wireframes, guías de estilo, diseño y demos.</p>",
 			"link": [
 				"Web Site",
 				"https://github.com/karo-801chan/guayabaJam"
@@ -28,7 +28,7 @@
 			"id": 3,
 			"name":"Hecho x Mi",
 			"type":"App",
-			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p> ",
+			"info":"<p>La aplicación está orientada a personas con la necesidad de realizar un proyecto sencillo que involucre la manualidad (como amas de casa) o simplemente como una fuente de ideas para reutilizar objetos cotidianos.</p><p>Ofrece  tutoriales, videos, información de tiendas especializadas y la posibilidad de anunciar a la venta articulos de personas particulares.</p><p>Este proyecto se enfocó en crear una interfaz eficaz que cumplira con los principios de usabilidad y accesibilidad y a su vez que tenga un diseño fluido y atractivo al usuario.</p> ",
 			"link": [
 				"InVision",
 				"https://invis.io/J31TXCRFM"
@@ -74,7 +74,7 @@
 			"id": 6,
 			"name":"Music Player",
 			"type":"Web App",
-			"info":"<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó</p>",
+			"info":"<p>La información, imágenes y audio del reproductor de música son obtenidas del API publico de Deezer por medio de un llamado ajax.</p><p>La funcionalidad de los controles del reproductor es por medio de javascript, utilice Revealing Module , de forma que cada control del reproductor tiene su propia función, utilizando los elementos audio de HTML 5.</p>",
 			"link": [
 				"Github Code",
 				"https://github.com/carolina-loaiza/Music-Player"

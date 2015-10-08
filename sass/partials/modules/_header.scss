@@ -13,6 +13,7 @@ header {
   p{
     @include font-size(26);
     font-weight: normal;
+    margin-bottom: 0;
     span {
       @include font-size(48);
       font-family: $title-cursive;

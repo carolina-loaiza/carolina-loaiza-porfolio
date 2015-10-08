@@ -63,6 +63,7 @@ var showProject = (function () {
           document.getElementById('project-images').classList.add('images-container-app');
         };
 
+        
         var infoPosition = elementPosition("close");
 
         scrollWin(231, infoPosition.top);

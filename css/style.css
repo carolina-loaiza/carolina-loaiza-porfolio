@@ -144,7 +144,8 @@ header {
   .header-content p {
     font-size: 26px;
     font-size: 2.6rem;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 0; }
     .header-content p span {
       font-size: 48px;
       font-size: 4.8rem;
@@ -361,7 +362,6 @@ nav a:hover {
   vertical-align: top;
   width: 100px; }
   .skill-item div {
-    background: #ddd;
     width: 100px;
     height: 100px;
     border-radius: 50%;
