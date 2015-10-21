@@ -15,7 +15,7 @@ a {
   color: #fff;
   font-family: $text-sans;
   font-weight: normal;
-  @include font-size(18);
+  @include font-size(20);
   text-decoration: none;
 }
 
@@ -30,6 +30,7 @@ button {
   background: none;
   border: 0;
   padding: 0;
+  font-weight: normal;
   &:focus, &:active, &:focus:active {
     @extend %blue-border;
   }
@@ -89,12 +90,23 @@ footer h2 {
   overflow: hidden;
 }
 
-
+.section-title {
+  @include font-size(200);
+  padding: 0;
+  margin: -4% 0;
+  opacity: 0.3;
+  color: #f2f2f2;
+}
 
 // Button Descarga
 .button {
   margin-top: 1.5%;
+  font-weight: normal;
   @include button(18, #fff, #fff);
+  &:hover {
+    background-color: #fff;
+    color: $text-secondary;
+  }
 }
 
 

@@ -28,6 +28,10 @@
 .link {
   margin-top: 8%;
   @include button(18, #886A68, #886A68);
+  &:hover {
+    background-color: #886A68;
+    color: $background-color;
+  }
 }
 
 .images-container{
@@ -97,14 +101,6 @@
     font-weight: 300;
 		@include font-size(35);
 	}
-}
-
-.section-title {
-  @include font-size(200);
-  padding: 0;
-  margin: -3% 0;
-  opacity: 0.3;
-  color: #f2f2f2;
 }
 
 .project-name {

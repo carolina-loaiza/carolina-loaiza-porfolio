@@ -5,6 +5,8 @@
 .about-info {
   margin: 0 auto;
   width: 700px;
+  padding-top: 30px;
+  margin-bottom: 10%;
   span {
     display: block;
     font-family: $title-cursive;
@@ -33,96 +35,4 @@
   p {
     text-align: center;
   }
-}
-
-//
-// Estilos de Skills bars
-//
-
-.box-skill {
-  width: 103px;
-  height: 103px;
-  stroke-dasharray: 2000;
-  -webkit-animation:  draw 8s linear forwards;
-  animation: draw 8s linear forwards;
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2;
-}
-
-// Skills box animation-keyframes Cuadrado
-@-moz-keyframes draw {
-  from {
-    stroke-dashoffset: 2000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes draw {
-  from {
-    stroke-dashoffset: 2000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.color-fill { 
-  fill: #bb5c65;
-}
-
-.box-background {
-  width: 105px;
-  height: 103px;
-  background-color: #fff;
-}
-
-// Skills box animation Html5
-
-.hidden-animation {
-  display: none;
-}
-
-
-.box-animation-html5 {
-  @include box-animation(35px, htmlcinco)
-}
-
-// Skills box animation-keyframes
-@-moz-keyframes htmlcinco {
-  @include box-animation-keyframes(103px, 80px, 35px)
-}
-
-@-webkit-keyframes htmlcinco {
-  @include box-animation-keyframes(103px, 80px, 35px)
-}
-
-// Skills box animation css3
-.box-animation-css3 {
-  @include box-animation(20px, csstres)
-}
-
-// Skills box animation-keyframes 
-@-moz-keyframes csstres {
-  @include box-animation-keyframes(103px, 60px, 20px)
-}
-
-@-webkit-keyframes csstres {
-  @include box-animation-keyframes(103px, 60px, 20px)
-}
-
-// Skills box animation javascript
-.box-animation-js {
-  @include box-animation(40px, js)
-}
-
-// Skills box animation-keyframes
-@-moz-keyframes js {
-  @include box-animation-keyframes(103px, 60px, 40px)
-}
-
-@-webkit-keyframes js {
-  @include box-animation-keyframes(103px, 60px, 40px)
 }
