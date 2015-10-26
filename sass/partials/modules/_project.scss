@@ -8,6 +8,7 @@
   float: left;
   margin: 2% 0 2% 15%;
 }
+
 .project-copy span{
   display: block;
   text-align: center;
@@ -70,9 +71,9 @@
   margin-left: 95%;
   padding-top: 25px;
   svg {
-    width: 43.353px;
-    height: 38.728px;
-    fill: #99646A; 
+    width: 33px;
+    height: 33px;
+    stroke: #99646A; 
   }
 }
 
@@ -90,9 +91,12 @@
 
 .projects {
 	li {
-    width: 32%;
+    width: 384px;
     height: 211px;
-    margin: 0.5%;
+    margin-bottom: 5%;
+    @media (min-width: 840px) {
+      margin: 0.5%;
+    }
 	}
 	h4 {
 		@include font-size(20);
@@ -105,7 +109,10 @@
 
 .project-name {
   height: 100%;
-  padding: 19% 10%;
+  padding: 17% 5%;
+  @media (min-width: 840px) {
+    padding: 17% 10%;
+  }
   position: absolute;
   text-decoration: none;
   width: 100%;
@@ -171,3 +178,16 @@
     @include font-size(30);
   }
 }
+
+.projects-container {
+  margin: 0 auto;
+  max-width: 400px;
+  overflow: hidden;
+  @media (min-width: 840px) {
+    max-width: 800px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+

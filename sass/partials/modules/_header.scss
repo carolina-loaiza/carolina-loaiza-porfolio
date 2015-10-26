@@ -18,6 +18,13 @@ header {
       @include font-size(48);
       font-family: $title-cursive;
       padding-left: 15px;
+      display: block;
+      @media (min-width: 820px) {
+        display: inline-block;
+      }
+      @media (max-width: 320px) {
+        @include font-size(40);
+      }
     }
   }
 }
@@ -27,11 +34,33 @@ header {
   border-radius: 50%;
   border: 5px solid #99646a;
   display: inline-block;
-  height: 215px;
   margin: 0; 
   margin-bottom: -135px;
-  margin-left: -370px;
-  width: 215px;
+  margin-left: -2%;
+  @media (min-width: 320px) {
+    height: 180px;
+    position: absolute;
+    top: 32px;
+    left: 32%;
+    width: 180px;
+  }
+
+  @media (min-width: 420px) {
+    width: 215px;
+    height: 215px;
+    top: 18px;
+    left: 35%;
+  }
+
+  @media (min-width: 840px) {
+    position: inherit;
+    margin-left: -65px;
+  }
+
+  @media (min-width: 1180px) {
+    position: inherit;
+    margin-left: -370px;
+  }
 }
 
 //

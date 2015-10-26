@@ -91,11 +91,14 @@ footer h2 {
 }
 
 .section-title {
-  @include font-size(200);
+  @include font-size(100);
   padding: 0;
   margin: -4% 0;
   opacity: 0.3;
   color: #f2f2f2;
+  @media (min-width: 840px) {
+    @include font-size(200);
+  }
 }
 
 // Button Descarga
