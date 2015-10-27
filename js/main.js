@@ -96,3 +96,14 @@ var showProject = (function () {
 })();
 
 showProject.loadProjects();
+
+$('.main-nav a').click(function(){  
+  $('html, body').stop().animate({
+    scrollTop: $( $(this).attr('href') ).offset().top - -10
+  }, 1000);
+  return false;
+});
+
+$('#mobile-nav').click(function(){  
+  $('.main-nav-container').toggleClass("main-nav-mobile");
+});

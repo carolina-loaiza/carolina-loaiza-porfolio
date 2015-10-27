@@ -8,8 +8,11 @@ header {
 
 .header-content {
   color: $text;
-  padding: 18% 0 1% 0;
+  padding: 28% 0 1% 0;
   text-align: center;
+  @media (min-width: 820px) {
+    padding: 18% 0 1% 0;
+  }
   p{
     @include font-size(26);
     font-weight: normal;
@@ -34,20 +37,19 @@ header {
   border-radius: 50%;
   border: 5px solid #99646a;
   display: inline-block;
-  margin: 0; 
   margin-bottom: -135px;
   margin-left: -2%;
   @media (min-width: 320px) {
-    height: 180px;
+    height: 150px;
     position: absolute;
     top: 32px;
-    left: 32%;
-    width: 180px;
+    left: 35%;
+    width: 150px;
   }
 
   @media (min-width: 420px) {
-    width: 215px;
-    height: 215px;
+    width: 180px;
+    height: 180px;
     top: 18px;
     left: 35%;
   }
@@ -92,10 +94,54 @@ nav {
     padding: 0 30px;
   }
   // Enlace a Inicio/Logo
-  li:first-child a {
-    background: url(../img/logo-small.png) no-repeat center bottom;
-    margin-right: 635px;
-    width: 150px;
-    @extend %text-hidden;
+
+}
+
+.main-nav {
+  margin: 0 auto;
+  max-width: $content-width;
+  overflow: hidden;
+}
+
+.main-nav-container {
+  display: none;
+  @media (min-width: 840px){
+    display: block;
+    float: right;
   }
 }
+
+.main-logo { 
+  width: 135px;
+  float: left;
+  a {
+    background: url(../img/logo-small.png) no-repeat center bottom;
+    @extend %text-hidden;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.mobile-nav-button {
+  display: block;
+  float: right;
+  @include button(18, #DDD, #DDD);
+  margin: 10px; 
+  @media (min-width: 840px){
+    display: none;
+  }
+}
+
+.main-nav-mobile {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background: #97706A;
+  width: 80%;
+  li {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
