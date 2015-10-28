@@ -26,20 +26,19 @@
 			]
 		},{
 			"id": 3,
-			"name":"Hecho x Mi",
-			"type":"App",
+			"name":"Cetav Game Jam 2015",
+			"type":"Sitio Web",
 			"info":"<p>La aplicación está orientada a personas con la necesidad de realizar un proyecto sencillo que involucre la manualidad (como amas de casa) o simplemente como una fuente de ideas para reutilizar objetos cotidianos.</p><p>Ofrece  tutoriales, videos, información de tiendas especializadas y la posibilidad de anunciar a la venta articulos de personas particulares.</p><p>Este proyecto se enfocó en crear una interfaz eficaz que cumplira con los principios de usabilidad y accesibilidad y a su vez que tenga un diseño fluido y atractivo al usuario.</p> ",
 			"link": [
 				"InVision",
 				"https://invis.io/J31TXCRFM"
 			],	
 			"image" : [
-				"img/project-hechoxMi/hechoxmi-01.png",
-				"img/project-hechoxMi/hechoxmi-02.png",
-				"img/project-hechoxMi/hechoxmi-03.png",
-				"img/project-hechoxMi/hechoxmi-04.png",
-				"img/project-hechoxMi/hechoxmi-05.png",
-				"img/project-hechoxMi/hechoxmi-06.png"
+				"img/project-gamejam/gamejam-01.png",
+				"img/project-gamejam/gamejam-02.png",
+				"img/project-gamejam/gamejam-03.png",
+				"img/project-gamejam/gamejam-04.png",
+				"img/project-gamejam/gamejam-05.png"
 			]
 		},{
 			"id": 4,
