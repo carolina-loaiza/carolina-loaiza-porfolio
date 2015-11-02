@@ -6,10 +6,17 @@
 }
 
 .project-copy {
-  width: 22%;
-  padding-right: 2%;
-  float: left;
-  margin: 2% 0 2% 15%;
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 1100px) {
+    padding-right: 2%;
+    float: left;
+    margin: 2% 0 2% 10%;
+    width: 22%;
+  }
+  @media (min-width: 1366px) {
+    margin: 2% 0 2% 15%;
+  }
 }
 
 .project-copy span{
@@ -24,49 +31,67 @@
 
 .project-images {
   overflow: hidden;
-  width: 50%;
+  width: 90%;
   max-width: 900px;
-  margin-bottom: 5%;
+  margin: 0 auto;
+  padding-top: 5%;
+  @media (min-width: 1100px) {
+    width: 60%;
+    margin: 0 0 5% 0;
+    padding-top: 0;
+  }
+  @media (min-width: 1366px) {
+    width: 50%;
+  }
 }
 
 .link {
-  margin-top: 8%;
+  margin-top: 2%;
+  margin-right: 5%;
   @include button(18, #886A68, #886A68);
   &:hover {
     background-color: #886A68;
     color: $background-color;
   }
+  @media (min-width: 1100px) {
+    margin-top: 8%;
+  }
 }
 
 .images-container{
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 1000px;
-  margin-right: -50px;
+  @media (min-width: 1100px) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 1000px;
+    margin-right: -50px;
+  }
 }
 
 .images-container img{
-  width: 95%;
+  width: 100%;
   margin-bottom: 4%;
+  @media (min-width: 1100px) {
+    width: 95%;
+  }
 }
 
 .close-project-section {
   display: inline-block;
-  margin-left: 95%;
+  margin-left: 85%;
   padding-top: 25px;
   svg {
     width: 33px;
     height: 33px;
     stroke: #99646A; 
   }
-}
 
-.hideScrollBar{
-  background-color: #856d6d;
-  height: 91%;
-  margin: 48px 15px 0 15px;
-  overflow-x: hidden;
-  width:101%;
+  @media (min-width: 410px) {
+    margin-left: 92%;
+  }
+
+  @media (min-width: 1100px) {
+    margin-left: 95%;
+  }
 }
 
 .projects {
@@ -156,7 +181,9 @@
 .project-info {
   h2 {
     font-family: $text-sans;
-    margin-top: 3%;
+    @media (min-width: 840px) {
+      margin-top: 3%;
+    }
   }
   span {
     vertical-align: middle;

@@ -30,7 +30,7 @@
         return false;
       });
 
-      $('#mobile-nav').click(function(){  
+      $('#mobile-nav, .main-nav a').click(function(){  
         $('.main-nav-container').toggleClass("main-nav-mobile");
       });
 
