@@ -46,7 +46,7 @@
     <section id="projects" class="projects">
       <h2 class="section-title">Proyectos</h2>
       <ul class="projects-container">
-        <li id="0" class="project-id">
+        <li id="projectOurHeritage" class="first-project">
           <div class="project-item project-our-heritage">
             <div class="project-name">
               <p>Our Heritage</p>
@@ -54,6 +54,7 @@
             </div>
           </div>
         </li>
+        <!--
         <li id="1" class="project-id">
           <div class="project-item project-colectivo">
             <div class="project-name">
@@ -62,7 +63,8 @@
             </div>
           </div>
         </li>
-        <li id="2" class="project-id">
+        -->
+        <li id="projectGameJam">
           <div class="project-item project-gamejam">
             <div class="project-name">
               <p>Cetav Game Jam 2015</p>
@@ -70,7 +72,7 @@
             </div>
           </div>
         </li>
-        <li id="3" class="project-id">
+        <li id="projectGuayabaJam">
           <div class="project-item project-guayaba-jam">
             <div class="project-name">
               <p>Guayaba Jam</p>
@@ -78,7 +80,7 @@
             </div>
           </div>
         </li>
-        <li id="4" class="project-id">
+        <li id="projectWeatherApp">
           <div class="project-item project-weather-app">
             <div class="project-name">
               <p>Weather App</p>
@@ -86,7 +88,7 @@
             </div>
           </div>
         </li>
-        <li  id="5" class="project-id">
+        <li  id="projectMusicPlayer">
           <div class="project-item project-music-player">
             <div class="project-name">
               <p>Music Player</p>
@@ -98,14 +100,16 @@
     </section>
     <!-- End Project gallery -->
     <!-- Start Project Json info --> 
-    <section class="project-section">
-      <button id="close" class="close-project-section">
+    <section class="project-section hidden">
+      <a href="#projects" class="close-project-section">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 40 40">
           <line stroke-width="2" x1="0.769" y1="0.706" x2="39.706" y2="39.769"/>
           <line stroke-width="2" x1="39.769" y1="0.833" x2="0.706" y2="39.771"/>
       </svg>
-      </button>
+      </a>
       <div id="project-info" class="project-info">
+        <div id="project-copy" class="project-copy"></div>
+        <div id="project-images" class="project-images"></div>
       </div>
     </section>
     <!-- End Project Json info -->
@@ -124,6 +128,7 @@
     </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <!-- scripts -->
   </body>
