@@ -1,109 +1,70 @@
+(function(w, d, u) {
+    // Mozilla, Opera, Webkit
+    if(document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+        domReady();
+      }, false );
 
-var showProject = (function () {
-
-  var closeButton = document.getElementById("close");
-  var contentInfo = document.getElementById('project-info');
-
-  //Funcion para obtener la posicion de un elemento
-  function elementPosition(idi) {
-    var ele = document.getElementById(idi);
-    var top = 0;
-    while (ele.tagName != "BODY") {
-      top += ele.offsetTop;
-      ele = ele.offsetParent;
-    }
-    return {
-      top: top
-    };
-  }
-
-  function scrollWin(x, y) { 
-    this.scrollTo(x, y)
-  }
-
-  function loadJSON() { 
-    var request = new XMLHttpRequest();
-    request.open('GET', 'js/datos.json', true);
-    request.onload = function() {
-      if (request.status >= 200 && request.status < 400) {
-        var data = JSON.parse(request.responseText);
-        showInfo(data);
-      } else {
-         console.log("We reached our target server, but it returned an error")
-      }
-    };
-    request.onerror = function() {
-       console.log("There was a connection error of some sort")
-    };
-    request.send();
-  }
-
-  function showInfo(data) {
-    var currentItem = document.querySelectorAll('.project-id');
-
-    for (var i = 0; i < currentItem.length; i++) {
-
-      currentItem[i].onclick = function() {
-        closeButton.classList.add('display-button');
-        var id = this.id;
-        var contenido = "";
-
-        //Muestra las imagenes
-        var imgContainer = "";
-        var cantImg = data.project[id].image.length
-        for (var i = 0; i < cantImg; i++) {
-          imgContainer += '<img src="'+ data.project[id].image[i] +'">';
+    // If IE event model is used
+    } else if(document.attachEvent) {
+      // ensure firing before onload
+      document.attachEvent('onreadystatechange', function(){
+        if ( document.readyState === 'complete' ) {
+          document.detachEvent('onreadystatechange', arguments.callee );
+          domReady();
         }
+      });
+    }
 
-        contenido += '<div id="project-copy" class="project-copy"><h2>' + data.project[id].name +'</h2><span>' + data.project[id].type + '</span>' + data.project[id].info + '<a href="' + data.project[id].link[1] + '" target="_blank" class="link">' + data.project[id].link[0] + '</a></div>'+
-        '<div id="project-images" class="project-images"><div class="images-container">' + imgContainer + '</div></div>';
-        contentInfo.innerHTML = contenido;
-
-        if (data.project[id].type == 'App') {
-          document.getElementById('project-images').classList.add('images-container-app');
-        };
-
-        
-        var infoPosition = elementPosition("close");
-
-        scrollWin(231, infoPosition.top);
-
-        closeButton.onclick = function() {
-          contentInfo.innerHTML = "";
-          closeButton.classList.remove('display-button');
-          var projectPosition = elementPosition("projects"); 
-          scrollWin(231, projectPosition.top);
-        }
-
+    function domReady() {
+      // Scroll nav
+      function scrollAnimate(path, seconds) {
+        $('html, body').stop().animate({
+          scrollTop: $( path ).offset().top - -10
+        }, seconds);
       }
+
+      $('.main-nav a').click(function(){
+        scrollAnimate($(this).attr('href'), 1000);
+        return false;
+      });
+
+      $('#mobile-nav').click(function(){  
+        $('.main-nav-container').toggleClass("main-nav-mobile");
+      });
+
+      // Project Data File
+      var url = "js/datos.js";
+      // Project HTML Template
+      var templateCopy ='<h2>{{name}}</h2><span>{{type}}</span>'+
+                        '<p>{{copy}}</p>'+
+                        '<a href={{git}} target="_blank" class="link">Github Code</a>'+
+                        '{{#link}}<a href={{link}} target="_blank" class="link">Web Site</a>{{/link}}';
+      var templateImage ='<div class="images-container">{{#image}}<img src={{src}}>{{/image}}</div>';
+
+      // Template Mustache Print Proyect
+      $('.projects-container li').click(function(){
+        $('.project-section').removeClass("hidden");
+
+        // Scroll nav to Proyects
+        scrollAnimate(".project-section", 2000);
+
+        var project = $(this).attr("id")
+        // Mustache to html                
+        $.getScript( url, function() {
+          var data = eval(project);
+          var copy = Mustache.to_html(templateCopy, data);
+          var img = Mustache.to_html(templateImage, data);
+          $('#project-copy').html(copy);
+          $('#project-images').html(img);
+        });
+      });
+
+      // Project Section Close Button
+      $('.close-project-section').click(function(){
+        scrollAnimate("#projects", 800);
+        $('.project-section').toggleClass("hidden");
+      });
     }
-  }
-  
-  //Muestra animacion cuando el scroll de la pagina esta en sobre mi
-  /*
-  window.addEventListener("scroll", function(event) {
-    var left = this.scrollY;
-    if (left > TopLeft.top) {
-      document.getElementById("skills-bars").classList.remove('hidden-animation');
-    }
-  });
-  */
-
-  return {
-    loadProjects : loadJSON
-  };
-
-})();
-
-showProject.loadProjects();
-
-$('.main-nav a').click(function(){  
-  $('html, body').stop().animate({
-    scrollTop: $( $(this).attr('href') ).offset().top - -10
-  }, 1000);
-  return false;
-});
-
-$('#mobile-nav').click(function(){  
-  $('.main-nav-container').toggleClass("main-nav-mobile");
-});
+})(window, document);
