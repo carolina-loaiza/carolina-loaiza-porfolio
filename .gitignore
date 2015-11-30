@@ -3,6 +3,7 @@
 **/.sass-cache/*
 **/.sass-cache
 **/style.css.map
+**/node_modules
 .sass-cache
 .DS_Store
 style.css.map
