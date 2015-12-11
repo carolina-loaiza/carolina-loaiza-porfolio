@@ -26,7 +26,7 @@
                       '{{#link}}<a href={{link}} target="_blank" class="link">Web Site</a>{{/link}}'+
                       '<div class="images-container">'+
                         '<span>{{gallery}}</span>'+
-                        '<ul>{{#image}}<li id={{idx}}><img src={{src}}>{{/image}}</li></ul>'+
+                        '<ul>{{#image}}<li id={{idx}} class="image-item"><img src={{src}}>{{/image}}</li></ul>'+
                       '</div>';
     var templateImage ='<picture>'+
                         '<source media="(min-width: 480px)" srcset={{mainImage}}>'+
@@ -53,7 +53,7 @@
     });
 
      // Project Section Galery
-    $('.images-container li').click(function(){
+    $('.image-item').click(function(){
         var picture = $(this).children().attr('src');
         var count = $(this).id;
         var path = picture.substring(0, picturePath.indexOf('-')) + '-' + count + '.png';
