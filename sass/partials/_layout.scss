@@ -2,6 +2,13 @@
 // Layout styles
 //
 
+.main-nav,
+.contact-container {
+  margin: 0 auto;
+  max-width: $content-width;
+  overflow: hidden;
+}
+
 footer {
   background:  url("../img/background/background-footer.png") no-repeat;
   overflow: hidden;
@@ -28,7 +35,7 @@ footer {
   -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   ul {
-    padding-bottom: 11%;
+    padding-bottom: 8%;
   }
 }
 
