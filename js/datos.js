@@ -39,7 +39,7 @@ var projectGameJam = {
 var projectExtremeKawaii = {
     name: "Extreme Kawaii",
     type: "Drupal 7",
-    copy: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó",
+    copy: "Extreme Kawaii fue un proyecto que inició como un sitio estático, construido con HTML y CSS. A pesar de que el sitio no es 100% funcional, la idea principal del proyecto fue lograr pasar el sitio estático a un CMS como Drupal 7, para esto se trabajo en parejas y utilizamos herramientas con pantheon.io , Github , Sass, y Vagrant para desarrollar en un ambiente local",
     link: "http://dev-extreme-kawaii.pantheon.io/",
     mainImage: "img/project-extremeKawaii/extremeK-01.png",
     gallery: "Galería",
