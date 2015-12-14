@@ -43,6 +43,7 @@
   }
 
   @media (min-width: 1100px) {
+    min-height: 700px;
     width: 60%;
     margin: 0 0 5% 0;
     padding-top: 0;
@@ -73,7 +74,7 @@
   }
 }
 
-.images-item {
+.select-item {
   border: 5px solid;
 }
 
@@ -112,126 +113,3 @@
     margin-left: 95%;
   }
 }
-
-.projects {
-
-	li {
-    width: 384px;
-    height: 211px;
-    margin-bottom: 5%;
-
-    @media (min-width: 840px) {
-      margin: 0.5%;
-    }
-	}
-
-	h4 {
-		@include font-size(20);
-	}
-
-	p {
-    font-weight: 300;
-		@include font-size(35);
-	}
-
-  @media (min-width: 1366px) {
-    .first-project {
-      float: left;
-      height: 436px;
-    }
-  }
-}
-
-.project-name {
-  height: 100%;
-  padding: 17% 5%;
-
-  @media (min-width: 840px) {
-    padding: 17% 10%;
-  }
-
-  position: absolute;
-  text-decoration: none;
-  width: 100%;
-	@extend %item-transition;
-  @include scale(1);
-  -webkit-backface-visibility: hidden;
-}
-
-.project-item {
-	height: 100%;
-  padding: 0;
-  position: relative;
-  box-shadow: inset  0 0 0 194px rgba(136,106,104,0.8), 0 1px 3px rgba(0,0,0,0.8);
-  background-size: cover;
-  @extend %item-transition;
-
-  &:hover {
-  	box-shadow: none;
-  	.project-name {
-		  opacity: 0;
-		  @include scale(0);
-    }
-  }
-}
-
-.project-section {
-  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-}
-
-.project-colectivo { 
-  background-image: url(../img/project-colectivo/small-colectivo.png);
-}
-
-.project-guayaba-jam { 
-  background-image: url(../img/project-guayabaJam/small-guayabaJam.png);
-}
-
-.project-music-player { 
-  background-image: url(../img/project-musicPlayer/small-musicPlayer.png);
-}
-
-.project-our-heritage { 
-  background-image: url(../img/project-ourHeritage/small-ourHeritage.png);
-}	
-
-.project-gamejam { 
-  background-image: url(../img/project-gamejam/small-gamejam.png);
-}
-
-.project-weather-app { 
-  background-image: url(../img/project-weatherApp/small-weatherApp.png);
-}
-
-.project-info {
-  h2 {
-    font-family: $text-sans;
-
-    @media (min-width: 840px) {
-      margin-top: 3%;
-    }
-  }
-
-  span {
-    vertical-align: middle;
-    font-family: $title-cursive;
-    @include font-size(30);
-  }
-}
-
-.projects-container {
-  margin: 0 auto;
-  max-width: 400px;
-  overflow: hidden;
-
-  @media (min-width: 840px) {
-    max-width: 800px;
-  }
-  
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
-

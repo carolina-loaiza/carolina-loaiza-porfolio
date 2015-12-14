@@ -14,7 +14,6 @@ ul, p {
 a {
   color: #fff;
   font-family: $text-sans;
-  font-weight: normal;
   @include font-size(20);
   text-decoration: none;
 }
@@ -63,9 +62,8 @@ li {
 
 p, pre{
   font-family: $text-sans;
-  font-weight: 100;
   margin-bottom: 4%;
-  @include font-size(20);
+  @include font-size(18);
 }
 
 
@@ -74,8 +72,11 @@ p, pre{
 //
 
 footer {
+  background:  url("../img/background/background-footer.png") no-repeat;
+  overflow: hidden;
+  
   .button {
-    width: 223px;
+    width: 212px;
   }
 
   h2 {
@@ -106,12 +107,18 @@ footer {
   }
 }
 
+.copyright {
+  margin: 6% 0 1%;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
 // Basic Button
 
 .button {
   margin-top: 1.5%;
   font-weight: normal;
-  @include button(18, #fff, #fff);
+  @include button(15, #fff, #fff);
   &:hover {
     background-color: #fff;
     color: $text-secondary;

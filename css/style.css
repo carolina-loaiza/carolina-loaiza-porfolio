@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Satisfy|Josefin+Sans:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,300|Satisfy);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -357,6 +357,25 @@ td,
 th {
   padding: 0; }
 
+.icon {
+  background: url(../img/sprite.png);
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.icon-chat {
+  background-position: 0 0;
+  height: 35px; }
+
+.icon-email {
+  background-position: 99px 0;
+  height: 27px; }
+
+.icon-phone {
+  background-position: 49px 0;
+  height: 40px; }
+
 .background-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -396,8 +415,7 @@ ul, p {
 
 a {
   color: #fff;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: normal;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-size: 2rem;
   text-decoration: none; }
@@ -433,19 +451,20 @@ h2 {
   text-align: center; }
 
 p, pre {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 4%;
-  font-size: 20px;
-  font-size: 2rem; }
+  font-size: 18px;
+  font-size: 1.8rem; }
 
-footer .button {
-  width: 223px; }
-
-footer h2 {
-  -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
+footer {
+  background: url("../img/background/background-footer.png") no-repeat;
+  overflow: hidden; }
+  footer .button {
+    width: 212px; }
+  footer h2 {
+    -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
 
 .contact-container p {
   margin-bottom: 1%; }
@@ -466,6 +485,12 @@ footer h2 {
       font-size: 200px;
       font-size: 20rem; } }
 
+.copyright {
+  margin: 6% 0 1%;
+  display: block;
+  font-size: 15px;
+  text-align: center; }
+
 .button {
   margin-top: 1.5%;
   font-weight: normal;
@@ -473,11 +498,11 @@ footer h2 {
   border: 2px solid #fff;
   color: #fff;
   display: block;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  padding: 0.5em 1em;
-  font-weight: bold; }
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+  padding: 7px 9px;
+  font-weight: 500; }
   .button:hover {
     background-color: #fff;
     color: #856d6d; }
@@ -487,11 +512,6 @@ footer h2 {
   margin: 0 auto;
   max-width: 1200px;
   overflow: hidden; }
-
-footer {
-  background: url("../img/background/background-footer.png") no-repeat;
-  overflow: hidden;
-  padding-bottom: 5%; }
 
 .about-me {
   background-color: #99646a;
@@ -512,9 +532,6 @@ footer {
 .project-info {
   color: #886A68; }
 
-header {
-  background: url("../img/background/background-header.png") no-repeat center center; }
-
 nav ul {
   padding: 0; }
 
@@ -528,7 +545,7 @@ nav a:hover {
 .main-nav a {
   color: #ddd;
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 70px;
   line-height: 66px;
   padding: 0 30px; }
@@ -563,11 +580,11 @@ nav a:hover {
   border: 2px solid #DDD;
   color: #DDD;
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
-  padding: 0.5em 1em;
-  font-weight: bold;
+  padding: 7px 9px;
+  font-weight: 500;
   margin: 10px; }
   @media (min-width: 840px) {
     .mobile-nav-button {
@@ -593,6 +610,9 @@ nav a:hover {
     .main-nav-mobile {
       padding-top: 10%; } }
 
+header {
+  background: url("../img/background/background-header.png") no-repeat center center; }
+
 .header-content {
   color: #ddd;
   position: relative; }
@@ -601,7 +621,7 @@ nav a:hover {
       padding: 18% 0 1%;
       margin: 0 auto;
       max-width: 1200px;
-      padding: 28% 0 1%; } }
+      padding: 15% 0 1%; } }
   .header-content h1 {
     font-size: 48px;
     font-size: 4.8rem;
@@ -615,11 +635,11 @@ nav a:hover {
     @media (min-width: 820px) {
       .header-content h1 {
         text-align: left;
-        margin-left: 200px; } }
+        margin-left: 250px; } }
     .header-content h1 span {
       font-size: 26px;
       font-size: 2.6rem;
-      font-family: "Josefin Sans", sans-serif; }
+      font-family: "Poppins", sans-serif; }
       .header-content h1 span:before, .header-content h1 span:after {
         content: "-";
         margin: 0 10px; }
@@ -630,7 +650,7 @@ nav a:hover {
           padding-bottom: 10px; } }
 
 .portrait {
-  background: #ddd;
+  background: url(../img/portrait.png) no-repeat center center;
   border-radius: 50%;
   border: 5px solid #99646a;
   display: block; }
@@ -641,102 +661,35 @@ nav a:hover {
       width: 160px; } }
   @media (min-width: 840px) {
     .portrait {
+      height: 220px;
       display: inline-block;
       position: static;
-      margin-bottom: -135px; } }
+      margin-bottom: -135px;
+      width: 220px; } }
 
-.hidden {
-  display: none; }
-
-.project-copy {
-  width: 90%;
-  margin: 0 auto; }
-  @media (min-width: 1100px) {
-    .project-copy {
-      padding-right: 2%;
-      float: left;
-      margin: 2% 0 2% 10%;
-      width: 25%; } }
-  @media (min-width: 1366px) {
-    .project-copy {
-      margin: 2% 0 2% 12%; } }
-
-.project-copy span {
-  display: block;
-  text-align: center;
-  margin-bottom: 8%; }
-
-.project-copy h2 {
-  font-size: 5rem; }
-
-.project-images {
-  overflow: hidden;
-  max-width: 900px;
+.about-info {
   margin: 0 auto;
-  padding-top: 5%; }
-  .project-images img {
-    width: 100%;
-    margin-bottom: 4%; }
-  @media (min-width: 1100px) {
-    .project-images {
-      width: 60%;
-      margin: 0 0 5% 0;
-      padding-top: 0; } }
-  @media (min-width: 1366px) {
-    .project-images {
-      width: 50%; } }
+  width: 90%;
+  padding-top: 4%; }
+  @media (min-width: 840px) {
+    .about-info {
+      max-width: 700px; } }
+  .about-info a {
+    margin: 4% auto 12%;
+    width: 114px; }
 
-.images-container {
-  text-align: center; }
-  @media (max-width: 480px) {
-    .images-container {
-      display: none; } }
-  .images-container li {
-    margin: 5px;
-    height: 83px;
-    box-sizing: content-box;
-    cursor: pointer; }
-    .images-container li:hover {
-      border: 5px solid;
-      transition: all .20s ease-out; }
+@media (min-width: 840px) {
+  .about-title {
+    display: inline-block;
+    position: absolute; }
+  .about-title:first-child {
+    margin: 48px -80px; } }
 
-.images-item {
-  border: 5px solid; }
-
-.link {
-  margin-top: 2%;
-  margin-right: 5%;
-  background: none;
-  border: 2px solid #886A68;
-  color: #886A68;
-  display: block;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  padding: 0.5em 1em;
-  font-weight: bold;
-  display: inline-block; }
-  .link:hover {
-    background-color: #886A68;
-    color: #f2f2f2; }
-  @media (min-width: 1100px) {
-    .link {
-      margin-bottom: 8%; } }
-
-.close-project-section {
-  display: inline-block;
-  margin-left: 85%;
-  padding-top: 25px; }
-  .close-project-section svg {
-    width: 33px;
-    height: 33px;
-    stroke: #99646A; }
-  @media (min-width: 410px) {
-    .close-project-section {
-      margin-left: 92%; } }
-  @media (min-width: 1100px) {
-    .close-project-section {
-      margin-left: 95%; } }
+.about-title:last-child {
+  margin: 0 10px; }
+  @media (min-width: 840px) {
+    .about-title:last-child {
+      margin: 5px 45px; } }
 
 .projects li {
   width: 384px;
@@ -753,7 +706,8 @@ nav a:hover {
 .projects p {
   font-weight: 300;
   font-size: 35px;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  margin-bottom: 0; }
 
 @media (min-width: 1366px) {
   .projects .first-project {
@@ -800,8 +754,8 @@ nav a:hover {
 .project-colectivo {
   background-image: url(../img/project-colectivo/small-colectivo.png); }
 
-.project-guayaba-jam {
-  background-image: url(../img/project-guayabaJam/small-guayabaJam.png); }
+.project-extreme-kawaii {
+  background-image: url(../img/project-extremeKawaii/small-extremeK.png); }
 
 .project-music-player {
   background-image: url(../img/project-musicPlayer/small-musicPlayer.png); }
@@ -816,7 +770,7 @@ nav a:hover {
   background-image: url(../img/project-weatherApp/small-weatherApp.png); }
 
 .project-info h2 {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Poppins", sans-serif; }
   @media (min-width: 840px) {
     .project-info h2 {
       margin-top: 3%; } }
@@ -838,28 +792,98 @@ nav a:hover {
     .projects-container {
       max-width: 1200px; } }
 
-.about-info {
-  margin: 0 auto;
+.hidden {
+  display: none; }
+
+.project-copy {
   width: 90%;
-  padding-top: 4%; }
-  @media (min-width: 840px) {
-    .about-info {
-      max-width: 700px; } }
-  .about-info a {
-    margin: 4% auto 12%;
-    width: 160px; }
+  margin: 0 auto; }
+  @media (min-width: 1100px) {
+    .project-copy {
+      padding-right: 2%;
+      float: left;
+      margin: 2% 0 2% 10%;
+      width: 25%; } }
+  @media (min-width: 1366px) {
+    .project-copy {
+      margin: 2% 0 2% 12%; } }
 
-@media (min-width: 840px) {
-  .about-title {
-    display: inline-block;
-    position: absolute; }
-  .about-title:first-child {
-    margin: 48px -80px; } }
+.project-copy span {
+  display: block;
+  text-align: center;
+  margin-bottom: 8%; }
 
-.about-title:last-child {
-  margin: 0 10px; }
-  @media (min-width: 840px) {
-    .about-title:last-child {
-      margin: 5px 45px; } }
+.project-copy h2 {
+  font-size: 5rem; }
+
+.project-images {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 5%; }
+  .project-images img {
+    width: 100%;
+    margin-bottom: 4%; }
+  @media (min-width: 1100px) {
+    .project-images {
+      min-height: 700px;
+      width: 60%;
+      margin: 0 0 5% 0;
+      padding-top: 0; } }
+  @media (min-width: 1366px) {
+    .project-images {
+      width: 50%; } }
+
+.images-container {
+  text-align: center; }
+  @media (max-width: 480px) {
+    .images-container {
+      display: none; } }
+  .images-container li {
+    margin: 5px;
+    height: 83px;
+    box-sizing: content-box;
+    cursor: pointer; }
+    .images-container li:hover {
+      border: 5px solid;
+      transition: all .20s ease-out; }
+
+.select-item {
+  border: 5px solid; }
+
+.link {
+  margin-top: 2%;
+  margin-right: 5%;
+  background: none;
+  border: 2px solid #886A68;
+  color: #886A68;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 7px 9px;
+  font-weight: 500;
+  display: inline-block; }
+  .link:hover {
+    background-color: #886A68;
+    color: #f2f2f2; }
+  @media (min-width: 1100px) {
+    .link {
+      margin-bottom: 8%; } }
+
+.close-project-section {
+  display: inline-block;
+  margin-left: 85%;
+  padding-top: 25px; }
+  .close-project-section svg {
+    width: 33px;
+    height: 33px;
+    stroke: #99646A; }
+  @media (min-width: 410px) {
+    .close-project-section {
+      margin-left: 92%; } }
+  @media (min-width: 1100px) {
+    .close-project-section {
+      margin-left: 95%; } }
 
 /*# sourceMappingURL=style.css.map */

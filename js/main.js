@@ -14,7 +14,7 @@
     
     /*
     $('#mobile-nav, .main-nav a').click(function(){  
-      $('.main-nav-container').toggleClass("main-nav-mobile");
+      $('.main-nav-container').toggleClass('main-nav-mobile');
     });
     */
     // Project Data File
@@ -22,17 +22,13 @@
     // Project HTML Template
     var templateCopy ='<h2>{{name}}</h2><span>{{type}}</span>'+
                       '<p>{{copy}}</p>'+
-                      '<a href={{git}} target="_blank" class="link">Github Code</a>'+
+                      '{{#git}}<a href={{git}} target="_blank" class="link">Github Code</a>{{/git}}'+
                       '{{#link}}<a href={{link}} target="_blank" class="link">Web Site</a>{{/link}}'+
                       '<div class="images-container">'+
                         '<span>{{gallery}}</span>'+
                         '<ul>{{#image}}<li id={{idx}} class="image-item"><img src={{src}}>{{/image}}</li></ul>'+
                       '</div>';
-    var templateImage ='<picture>'+
-                        '<source media="(min-width: 480px)" srcset={{mainImage}}>'+
-                        '<source media="(max-width: 480px)" srcset={{mobileImage}}>'+
-                        '<img srcset={{mainImage}}>'+
-                      '</picture>';
+    var templateImage ='<img id ="main-image" src={{mainImage}}>';
 
     // Template Mustache Print Proyect
     $('.projects-container li').click(function(){
@@ -45,25 +41,27 @@
         var img = Mustache.to_html(templateImage, data);
         $('#project-copy').html(copy);
         $('#project-images').html(img);
-        $('.images-container').find('li:first-child').addClass('images-item');
-        $('.project-section').removeClass("hidden");
-        // Scroll nav to Proyects
-        scrollAnimate(".project-section", 2000);
-      });
-    });
+        $('.image-item:first-child').addClass('select-item');
+        $('.project-section').removeClass('hidden');
 
-     // Project Section Galery
-    $('.image-item').click(function(){
-        var picture = $(this).children().attr('src');
-        var count = $(this).id;
-        var path = picture.substring(0, picturePath.indexOf('-')) + '-' + count + '.png';
-        console.log(path);
-        $('#project-images').find('img').src(path);
+        // Scroll nav to Proyects
+        scrollAnimate('.project-section', 2000);
+
+        // Project Section Galery
+        $('.image-item').click(function(){
+          $('.image-item').removeClass('select-item');
+          $(this).addClass('select-item');
+          var picture = $(this).children().attr('src');
+          var count = this.id;
+          var path = picture.substring(0, picture.indexOf('item')) + '0' + count + '.png';
+          $('#main-image').attr('src', path);
+        });   
+      });
     });
 
     // Project Section Close Button
     $('.close-project-section').click(function(){
-      scrollAnimate("#projects", 800);
+      scrollAnimate('#projects', 800);
       $('.project-section').toggleClass('hidden');
     });
   });

@@ -1,0 +1,90 @@
+//
+// Estilos para la navegación
+//
+
+nav {
+  ul {
+    padding: 0;
+  }
+  a:hover {
+    color: $text-secondary;
+    background-color: $background-nav;
+  }
+
+}
+
+// Navegación principal
+.main-nav {
+  li {
+    vertical-align: top;
+  }
+  a {
+    color: $text;
+    display: block;
+    font-family: $text-sans;
+    height: 70px;
+    line-height: 66px;
+    padding: 0 30px;
+  }
+}
+
+.main-nav-container {
+  display: none;
+  @media (min-width: 840px){
+    display: block;
+    float: right;
+  }
+}
+
+.main-logo { 
+  width: 135px;
+  float: left;
+  position: relative;
+  z-index: 3;
+  a {
+    background: url(../img/logo-small.png) no-repeat center bottom;
+    @extend %text-hidden;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  @media (min-width: 840px){
+    position: auto;
+    z-index: 0;
+  }
+}
+
+.mobile-nav-button {
+  display: block;
+  float: right;
+  position: relative;
+  z-index: 3;
+  @include button(18, #DDD, #DDD);
+  margin: 10px; 
+  @media (min-width: 840px){
+    display: none;
+  }
+}
+
+.main-nav-mobile {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background: #97706A;
+  width: 100%;
+  height: 100%;
+  padding-top: 20%;
+  li {
+    display: block;
+    margin: 5% auto;
+    width: 62%;
+  }
+  a {
+    font-family: $title-cursive;
+    font-size: 4rem;
+    text-align: center
+  }
+  @media (min-width: 410px){
+    padding-top: 10%;
+  }
+}

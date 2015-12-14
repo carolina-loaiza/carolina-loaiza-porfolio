@@ -10,8 +10,8 @@
   display: block;
   font-family: $text-sans;
   @include font-size($font-size);
-  padding: 0.5em 1em;
-  font-weight: bold;
+  padding: 7px 9px;
+  font-weight: 500;
 }
 
 // font-size mixin

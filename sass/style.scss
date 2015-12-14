@@ -11,12 +11,15 @@
 
 // Parciales base
 @import "partials/variables";
+@import "partials/sprite";
 @import "partials/mixins";
 @import "partials/placeholders";
 @import "partials/base";
 @import "partials/layout";
 
 // Módulos
+@import "partials/modules/main-nav";
 @import "partials/modules/header";
-@import "partials/modules/project";
 @import "partials/modules/about";
+@import "partials/modules/preview-project";
+@import "partials/modules/project";

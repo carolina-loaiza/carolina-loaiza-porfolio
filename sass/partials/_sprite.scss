@@ -1,0 +1,22 @@
+.icon {
+	background: url(../img/sprite.png);
+	display: inline-block;
+	width: 40px;
+	vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon-chat {
+	background-position: 0 0;
+	height: 35px;
+}
+
+.icon-email {
+	background-position: 99px 0;
+	height: 27px;
+}
+
+.icon-phone {
+	background-position: 49px 0;
+	height: 40px;
+}
