@@ -3,13 +3,12 @@
 //
 
 // Button
-@mixin button($font-size, $text-color, $border-color) {
+@mixin button($text-color, $border-color) {
   background: none;
   border: 2px solid $border-color;
   color: $text-color;
   display: block;
   font-family: $text-sans;
-  @include font-size($font-size);
   padding: 7px 9px;
   font-weight: 500;
 }

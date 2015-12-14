@@ -360,21 +360,40 @@ th {
 .icon {
   background: url(../img/sprite.png);
   display: inline-block;
-  width: 40px;
-  vertical-align: middle;
-  margin-right: 10px; }
+  width: 31px;
+  vertical-align: middle; }
 
 .icon-chat {
-  background-position: 0 0;
-  height: 35px; }
+  background-position: 1px -5px;
+  height: 21px;
+  margin-right: 10px; }
 
 .icon-email {
-  background-position: 99px 0;
-  height: 27px; }
+  background-position: 116px -3px;
+  height: 20px;
+  margin-right: 10px; }
 
 .icon-phone {
-  background-position: 49px 0;
-  height: 40px; }
+  background-position: -63px 4px;
+  height: 40px;
+  margin-right: 10px; }
+
+.icon-eye {
+  background-position: 44px 60px;
+  height: 21px;
+  margin-left: 10px; }
+
+.icon-browser {
+  background-position: -3px -34px;
+  height: 26px;
+  margin-left: 5px;
+  width: 25px; }
+
+.icon-github {
+  background-position: -30px -34px;
+  height: 26px;
+  margin-left: 5px;
+  width: 25px; }
 
 .background-image {
   -webkit-background-size: cover;
@@ -416,8 +435,8 @@ ul, p {
 a {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-size: 2rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none; }
 
 body {
@@ -453,14 +472,18 @@ h2 {
 p, pre {
   font-family: "Poppins", sans-serif;
   margin-bottom: 4%;
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 15px;
+  font-size: 1.5rem; }
+  @media (min-width: 720px) {
+    p, pre {
+      font-size: 18px;
+      font-size: 1.8rem; } }
 
 footer {
   background: url("../img/background/background-footer.png") no-repeat;
   overflow: hidden; }
   footer .button {
-    width: 212px; }
+    display: inline-block; }
   footer h2 {
     -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
@@ -499,13 +522,19 @@ footer {
   color: #fff;
   display: block;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-size: 1.5rem;
   padding: 7px 9px;
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 15px;
+  font-size: 1.5rem; }
+  @media (min-width: 720px) {
+    .button {
+      font-size: 18px;
+      font-size: 1.8rem; } }
   .button:hover {
     background-color: #fff;
     color: #856d6d; }
+  .button:hover > .icon-eye {
+    background-position: 44px -23px; }
 
 .main-nav,
 .contact-container {
@@ -551,9 +580,12 @@ nav a:hover {
   padding: 0 30px; }
 
 .main-nav-container {
-  display: none; }
+  height: 0;
+  opacity: 0; }
   @media (min-width: 840px) {
     .main-nav-container {
+      height: auto;
+      opacity: 1;
       display: block;
       float: right; } }
 
@@ -576,22 +608,27 @@ nav a:hover {
   float: right;
   position: relative;
   z-index: 3;
+  margin: 10px;
   background: none;
   border: 2px solid #DDD;
   color: #DDD;
   display: block;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
   padding: 7px 9px;
   font-weight: 500;
-  margin: 10px; }
+  font-size: 15px;
+  font-size: 1.5rem; }
+  @media (min-width: 720px) {
+    .mobile-nav-button {
+      font-size: 18px;
+      font-size: 1.8rem; } }
   @media (min-width: 840px) {
     .mobile-nav-button {
       display: none; } }
 
 .main-nav-mobile {
-  display: block;
+  opacity: 1;
+  transition: all .35s ease-out;
   position: absolute;
   z-index: 2;
   background: #97706A;
@@ -645,6 +682,8 @@ header {
         margin: 0 10px; }
       @media (max-width: 640px) {
         .header-content h1 span {
+          font-size: 20px;
+          font-size: 2rem;
           display: block;
           text-align: center;
           padding-bottom: 10px; } }
@@ -676,7 +715,7 @@ header {
       max-width: 700px; } }
   .about-info a {
     margin: 4% auto 12%;
-    width: 114px; }
+    width: 152px; }
 
 @media (min-width: 840px) {
   .about-title {
@@ -769,18 +808,6 @@ header {
 .project-weather-app {
   background-image: url(../img/project-weatherApp/small-weatherApp.png); }
 
-.project-info h2 {
-  font-family: "Poppins", sans-serif; }
-  @media (min-width: 840px) {
-    .project-info h2 {
-      margin-top: 3%; } }
-
-.project-info span {
-  vertical-align: middle;
-  font-family: "Satisfy", cursive;
-  font-size: 30px;
-  font-size: 3rem; }
-
 .projects-container {
   margin: 0 auto;
   max-width: 400px;
@@ -808,8 +835,15 @@ header {
     .project-copy {
       margin: 2% 0 2% 12%; } }
 
-.project-copy span {
-  display: block;
+.project-info h2 {
+  font-family: "Poppins", sans-serif; }
+  @media (min-width: 840px) {
+    .project-info h2 {
+      margin-top: 3%; } }
+
+.project-info h3 {
+  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 8%; }
 
@@ -859,14 +893,22 @@ header {
   color: #886A68;
   display: block;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
   padding: 7px 9px;
   font-weight: 500;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 15px;
+  font-size: 1.5rem; }
+  @media (min-width: 720px) {
+    .link {
+      font-size: 18px;
+      font-size: 1.8rem; } }
   .link:hover {
     background-color: #886A68;
     color: #f2f2f2; }
+  .link:hover > .icon-browser {
+    background-position: 93px -34px; }
+  .link:hover > .icon-github {
+    background-position: 66px -34px; }
   @media (min-width: 1100px) {
     .link {
       margin-bottom: 8%; } }

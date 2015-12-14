@@ -91,22 +91,6 @@
   background-image: url(../img/project-weatherApp/small-weatherApp.png);
 }
 
-.project-info {
-  h2 {
-    font-family: $text-sans;
-
-    @media (min-width: 840px) {
-      margin-top: 3%;
-    }
-  }
-
-  span {
-    vertical-align: middle;
-    font-family: $title-cursive;
-    @include font-size(30);
-  }
-}
-
 .projects-container {
   margin: 0 auto;
   max-width: 400px;

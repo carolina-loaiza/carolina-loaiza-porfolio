@@ -21,10 +21,20 @@
   }
 }
 
-.project-copy span{
-  display: block;
-  text-align: center;
-  margin-bottom: 8%;
+.project-info {
+  h2 {
+    font-family: $text-sans;
+
+    @media (min-width: 840px) {
+      margin-top: 3%;
+    }
+  }
+
+  h3 {
+    @include font-size(30);
+    text-align: center;
+    margin-bottom: 8%;
+  }
 }
 
 .project-copy h2{
@@ -81,12 +91,25 @@
 .link {
   margin-top: 2%;
   margin-right: 5%;
-  @include button(18, #886A68, #886A68);
+  @include button(#886A68, #886A68);
   display: inline-block;
+  @include font-size(15);
+
+  @media (min-width: 720px) {
+    @include font-size(18);
+  }
   
   &:hover {
     background-color: #886A68;
     color: $background-color;
+  }
+
+  &:hover > .icon-browser {
+    background-position: 93px -34px;
+  }
+
+  &:hover > .icon-github {
+    background-position: 66px -34px;
   }
 
   @media (min-width: 1100px) {
