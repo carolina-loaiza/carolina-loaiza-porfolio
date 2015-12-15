@@ -716,6 +716,9 @@ header {
   .about-info a {
     margin: 4% auto 12%;
     width: 152px; }
+    @media (min-width: 840px) {
+      .about-info a {
+        width: 169px; } }
 
 @media (min-width: 840px) {
   .about-title {
