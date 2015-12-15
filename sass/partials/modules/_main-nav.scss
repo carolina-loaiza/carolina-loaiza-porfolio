@@ -29,8 +29,12 @@ nav {
 }
 
 .main-nav-container {
-  display: none;
+  height: 0;
+  opacity: 0;
+
   @media (min-width: 840px){
+    height: auto;
+    opacity: 1;
     display: block;
     float: right;
   }
@@ -59,15 +63,22 @@ nav {
   float: right;
   position: relative;
   z-index: 3;
-  @include button(18, #DDD, #DDD);
   margin: 10px; 
+  @include button(#DDD, #DDD);
+  @include font-size(15);
+
+  @media (min-width: 720px) {
+    @include font-size(18);
+  }
+
   @media (min-width: 840px){
     display: none;
   }
 }
 
 .main-nav-mobile {
-  display: block;
+  opacity: 1;
+  transition: all .35s ease-out;
   position: absolute;
   z-index: 2;
   background: #97706A;

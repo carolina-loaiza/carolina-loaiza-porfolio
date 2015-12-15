@@ -14,7 +14,7 @@ ul, p {
 a {
   color: #fff;
   font-family: $text-sans;
-  @include font-size(20);
+  @include font-size(18);
   text-decoration: none;
 }
 
@@ -63,7 +63,11 @@ li {
 p, pre{
   font-family: $text-sans;
   margin-bottom: 4%;
-  @include font-size(18);
+  @include font-size(15);
+
+  @media (min-width: 720px) {
+    @include font-size(18);
+  }
 }
 
 
@@ -76,7 +80,7 @@ footer {
   overflow: hidden;
   
   .button {
-    width: 212px;
+    display: inline-block;
   }
 
   h2 {
@@ -118,10 +122,20 @@ footer {
 .button {
   margin-top: 1.5%;
   font-weight: normal;
-  @include button(15, #fff, #fff);
+  @include button(#fff, #fff);
+  @include font-size(15);
+
+  @media (min-width: 720px) {
+    @include font-size(18);
+  }
+
   &:hover {
     background-color: #fff;
     color: $text-secondary;
+  }
+
+  &:hover > .icon-eye {
+    background-position: 44px -23px;
   }
 }
 

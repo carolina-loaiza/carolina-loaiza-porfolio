@@ -8,24 +8,24 @@
     }
 
     $('.main-nav a').click(function(){
+      $('.main-nav-container').removeClass('main-nav-mobile');
       scrollAnimate($(this).attr('href'), 1000);
       return false;
     });
     
-    /*
-    $('#mobile-nav, .main-nav a').click(function(){  
+    $('#mobile-nav').click(function(){  
       $('.main-nav-container').toggleClass('main-nav-mobile');
     });
-    */
+
     // Project Data File
     var url = "js/datos.js";
     // Project HTML Template
-    var templateCopy ='<h2>{{name}}</h2><span>{{type}}</span>'+
+    var templateCopy ='<h2>{{name}}</h2><h3>{{type}}</h3>'+
                       '<p>{{copy}}</p>'+
-                      '{{#git}}<a href={{git}} target="_blank" class="link">Github Code</a>{{/git}}'+
-                      '{{#link}}<a href={{link}} target="_blank" class="link">Web Site</a>{{/link}}'+
+                      '{{#git}}<a href={{git}} target="_blank" class="link">Github Code<span class="icon icon-github"></span></a>{{/git}}'+
+                      '{{#link}}<a href={{link}} target="_blank" class="link">Web Site<span class="icon icon-browser"></span></a>{{/link}}'+
                       '<div class="images-container">'+
-                        '<span>{{gallery}}</span>'+
+                        '<h3>{{gallery}}</h3>'+
                         '<ul>{{#image}}<li id={{idx}} class="image-item"><img src={{src}}>{{/image}}</li></ul>'+
                       '</div>';
     var templateImage ='<img id ="main-image" src={{mainImage}}>';
