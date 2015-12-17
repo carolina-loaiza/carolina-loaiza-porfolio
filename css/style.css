@@ -788,11 +788,6 @@ header {
       -ms-transform: scale(0);
       transform: scale(0); }
 
-.project-section {
-  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
-
 .project-colectivo {
   background-image: url(../img/project-colectivo/small-colectivo.png); }
 
@@ -825,6 +820,12 @@ header {
 .hidden {
   display: none; }
 
+.project-section {
+  -moz-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+  overflow: hidden; }
+
 .project-copy {
   width: 90%;
   margin: 0 auto; }
@@ -851,7 +852,8 @@ header {
   margin-bottom: 8%; }
 
 .project-copy h2 {
-  font-size: 5rem; }
+  font-size: 40px;
+  font-size: 4rem; }
 
 .project-images {
   overflow: hidden;
