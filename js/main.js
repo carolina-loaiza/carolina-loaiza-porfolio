@@ -15,6 +15,7 @@
     
     $('#mobile-nav').click(function(){  
       $('.main-nav-container').toggleClass('main-nav-mobile');
+      $('#header').toggleClass('mobile-header');
     });
 
     // Project Data File
@@ -28,7 +29,7 @@
                         '<h3>{{gallery}}</h3>'+
                         '<ul>{{#image}}<li id={{idx}} class="image-item"><img src={{src}}>{{/image}}</li></ul>'+
                       '</div>';
-    var templateImage ='<img id ="main-image" src={{mainImage}}>';
+    var templateImage ='<img id="main-image" src={{mainImage}}>';
 
     // Template Mustache Print Proyect
     $('.projects-container li').click(function(){

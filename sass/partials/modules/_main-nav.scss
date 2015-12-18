@@ -45,6 +45,7 @@ nav {
   float: left;
   position: relative;
   z-index: 3;
+  
   a {
     background: url(../img/logo-small.png) no-repeat center bottom;
     @extend %text-hidden;
@@ -52,8 +53,9 @@ nav {
       background-color: transparent;
     }
   }
+
   @media (min-width: 840px){
-    position: auto;
+    position: static;
     z-index: 0;
   }
 }
