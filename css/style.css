@@ -442,8 +442,7 @@ a {
 body {
   background-color: #f2f2f2;
   color: #fff;
-  margin: 0;
-  overflow-x: hidden; }
+  margin: 0; }
 
 button {
   background: none;
@@ -483,18 +482,29 @@ footer {
   background: url("../img/background/background-footer.png") no-repeat;
   overflow: hidden; }
   footer .button {
-    display: inline-block; }
+    margin: 0 auto 50px;
+    width: 253px; }
+    @media (min-width: 840px) {
+      footer .button {
+        float: left;
+        width: initial; } }
   footer h2 {
     -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
 
 .contact-container p {
-  margin-bottom: 1%; }
+  margin-bottom: 8%; }
+  @media (min-width: 840px) {
+    .contact-container p {
+      margin-bottom: 1%; } }
 
 .contact-container {
   padding-top: 50px;
-  width: 80%; }
+  width: 90%; }
+  @media (min-width: 840px) {
+    .contact-container {
+      width: 80%; } }
 
 .section-title {
   font-size: 100px;
@@ -535,6 +545,9 @@ footer {
     color: #856d6d; }
   .button:hover > .icon-eye {
     background-position: 44px -23px; }
+
+.disable-scroll {
+  overflow-y: hidden; }
 
 .main-nav,
 .contact-container {

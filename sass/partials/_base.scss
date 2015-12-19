@@ -22,7 +22,6 @@ body {
   background-color: $background-color;
   color: #fff;
   margin: 0;
-  overflow-x: hidden;
 }
 
 button {
@@ -80,7 +79,13 @@ footer {
   overflow: hidden;
   
   .button {
-    display: inline-block;
+    margin: 0 auto 50px;
+    width: 253px;
+
+    @media (min-width: 840px) {
+      float: left;
+      width: initial;
+    }
   }
 
   h2 {
@@ -91,12 +96,20 @@ footer {
 }
 
 .contact-container p{
-  margin-bottom: 1%;
+  margin-bottom: 8%;
+
+  @media (min-width: 840px) {
+    margin-bottom: 1%;
+  }
 }
 
 .contact-container {
   padding-top: 50px;
-  width: 80%;
+  width: 90%;
+
+  @media (min-width: 840px) {
+    width: 80%;
+  }
 }
 
 .section-title {
@@ -117,6 +130,7 @@ footer {
   font-size: 15px;
   text-align: center;
 }
+
 // Basic Button
 
 .button {
@@ -137,6 +151,12 @@ footer {
   &:hover > .icon-eye {
     background-position: 44px -23px;
   }
+}
+
+// Disable Vertical Scroll in mobile 
+
+.disable-scroll {
+  overflow-y: hidden;
 }
 
 
