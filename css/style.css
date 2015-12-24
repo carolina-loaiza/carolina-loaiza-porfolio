@@ -519,10 +519,11 @@ footer {
       font-size: 20rem; } }
 
 .copyright {
-  margin: 6% 0 1%;
+  margin-bottom: 1%;
   display: block;
   font-size: 15px;
-  text-align: center; }
+  text-align: center;
+  clear: both; }
 
 .button {
   margin-top: 1.5%;
@@ -735,10 +736,10 @@ header {
       max-width: 700px; } }
   .about-info a {
     margin: 4% auto 12%;
-    width: 152px; }
+    width: 183px; }
     @media (min-width: 840px) {
       .about-info a {
-        width: 169px; } }
+        width: 207px; } }
 
 @media (min-width: 840px) {
   .about-title {
