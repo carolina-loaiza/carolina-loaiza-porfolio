@@ -83,11 +83,8 @@
     height: 83px;
     box-sizing: content-box;
     cursor: pointer;
-
-    &:hover {
-      border: 5px solid;
-      transition: all .20s ease-out;
-    }
+    overflow: hidden;
+    vertical-align: middle;
   }
 }
 

@@ -903,10 +903,9 @@ header {
     margin: 5px;
     height: 83px;
     box-sizing: content-box;
-    cursor: pointer; }
-    .images-container li:hover {
-      border: 5px solid;
-      transition: all .20s ease-out; }
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: middle; }
 
 .select-item {
   border: 5px solid; }
