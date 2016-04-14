@@ -49,7 +49,7 @@ var projectGameJam = {
 var projectColectivo = {
     name: "elcolectivo",
     type: "MEAN project",
-    copy: "El colectivo is a single page application about Costa Rica's bands , you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
+    copy: "El colectivo is a single page application about Costa Rica's bands, you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
     link: "http://elcolectivo.herokuapp.com",
     git: "https://github.com/carolina-loaiza/Colectivo-Jam",
     mainImage: "http://res.cloudinary.com/elcolectivo/image/upload/v1460601836/xsujhhppnkgwbibkcdtq.png",
