@@ -3,7 +3,7 @@ var idx = 0;
 var projectOurHeritage = {
     name: "Our Heritage",
     type: "Website",
-    copy: "Our Heritage is a videogame about climate change that was developed in conjunction with several companies and organizations including CETAV. To promote the game, a team was formed to develop the website. We use the Scrum methodology to develop the project and comply with various stages of development of wireframes, style guides, design and demos",
+    copy: "El colectivo is a single page application about Costa Rica's bands , you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
     git: "https://github.com/our-heritage/our-heritage.github.io",
     link: "http://ourheritagegame.com",
     mainImage: "http://res.cloudinary.com/elcolectivo/image/upload/v1460600691/k8mbk0ohaxf4kupl5rxv.png",
