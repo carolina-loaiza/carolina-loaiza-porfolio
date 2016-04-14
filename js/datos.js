@@ -3,7 +3,7 @@ var idx = 0;
 var projectOurHeritage = {
     name: "Our Heritage",
     type: "Website",
-    copy: "El colectivo is a single page application about Costa Rica's bands , you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
+    copy: "Our Heritage is a videogame about climate change that was developed in conjunction with several companies and organizations including CETAV. To promote the game, a team was formed to develop the website. We use the Scrum methodology to develop the project and comply with various stages of development of wireframes, style guides, design and demos.",
     git: "https://github.com/our-heritage/our-heritage.github.io",
     link: "http://ourheritagegame.com",
     mainImage: "http://res.cloudinary.com/elcolectivo/image/upload/v1460600691/k8mbk0ohaxf4kupl5rxv.png",
@@ -49,7 +49,7 @@ var projectGameJam = {
 var projectColectivo = {
     name: "elcolectivo",
     type: "MEAN project",
-    copy: "Extreme Kawaii was a project that began as a static site built with HTML and CSS. Although the site is not 100% functional, the main idea of the project was to transform the static site to a CMS like Drupal 7, for this project we worked in pairs and we use tools like pantheon.io, Github, Sass, and Vagrant to develop in a local environment.",
+    copy: "El colectivo is a single page application about Costa Rica's bands , you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
     link: "http://elcolectivo.herokuapp.com",
     git: "https://github.com/carolina-loaiza/Colectivo-Jam",
     mainImage: "http://res.cloudinary.com/elcolectivo/image/upload/v1460601836/xsujhhppnkgwbibkcdtq.png",
