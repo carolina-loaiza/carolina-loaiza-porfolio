@@ -408,11 +408,11 @@ button:focus, button:active, button:focus:active {
   -webkit-box-shadow: none; }
 
 .project-name, .project-item {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 li {
   display: inline-block;
@@ -479,7 +479,7 @@ p, pre {
       font-size: 1.8rem; } }
 
 footer {
-  background: url("../img/background/background-footer.png") no-repeat;
+  background: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460600527/q22emushr9ek7f4hgv8y.png") no-repeat;
   overflow: hidden; }
   footer .button {
     margin: 0 auto 50px;
@@ -662,7 +662,7 @@ nav a:hover {
       padding-top: 10%; } }
 
 header {
-  background: url("../img/background/background-header.png") no-repeat center center; }
+  background: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460600598/je1xjqwatsi9jgbeva7a.png") no-repeat center center; }
 
 .mobile-header {
   position: fixed;
@@ -810,22 +810,19 @@ header {
       transform: scale(0); }
 
 .project-colectivo {
-  background-image: url(../img/project-colectivo/small-colectivo.png); }
-
-.project-extreme-kawaii {
-  background-image: url(../img/project-extremeKawaii/small-extremeK.png); }
+  background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460602268/stojy0m4jukf30ncv8yk.png"); }
 
 .project-music-player {
-  background-image: url(../img/project-musicPlayer/small-musicPlayer.png); }
+  background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460601455/zwmiezd6arifo5ghqyqf.png"); }
 
 .project-our-heritage {
-  background-image: url(../img/project-ourHeritage/small-ourHeritage.png); }
+  background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460601601/k8ggokuvimhzmudgirgs.png"); }
 
 .project-gamejam {
-  background-image: url(../img/project-gamejam/small-gamejam.png); }
+  background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460601607/tj9sscibangcpdq51l5m.png"); }
 
 .project-weather-app {
-  background-image: url(../img/project-weatherApp/small-weatherApp.png); }
+  background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460601586/alr9nl99trddf2txgavs.png"); }
 
 .projects-container {
   margin: 0 auto;

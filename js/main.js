@@ -78,17 +78,18 @@
         var data = eval(id),
             copy = Mustache.to_html(elemP.templateCopy, data),
             img = Mustache.to_html(elemP.templateImage, data);
-        DomAction.printProjectData(copy, img);
+        var gallery = data.galleryImages;
+        DomAction.printProjectData(copy, img, gallery);
       })
     },
 
-    printProjectData: function(copy, img) {
+    printProjectData: function(copy, img, gallery) {
       elemP.copyContainer.html(copy);
       elemP.imgContainer.html(img);
       $(elemP.galleryItem).first().addClass(elemP.itemSelect);
       $(elemP.galleryItem).click(function(){
         var id = this.id;
-         DomAction.changeMainImg(id);
+         DomAction.changeMainImg(id, gallery);
       })
     },
 
@@ -97,12 +98,10 @@
       DomAction.scrollAnimate(elemP.projectContainer, 2000);
     },
 
-    changeMainImg: function(id) {
+    changeMainImg: function(id, gallery) {
       $(elemP.galleryItem).removeClass(elemP.itemSelect);
       $('#'+id).addClass(elemP.itemSelect);
-      var picture = $('#'+id).children().attr('src');
-      var path = picture.substring(0, picture.indexOf('item')) + '0' + id + '.png';
-      $(elemP.mainImage).attr('src', path);
+      $(elemP.mainImage).attr('src', gallery[id]);
     }
   }
 }());
