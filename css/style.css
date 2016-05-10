@@ -453,21 +453,28 @@ footer {
     -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6); }
 
-.contact-container {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%; }
-  .contact-container h2 {
-    padding-left: 60%; }
+@media (min-width: 840px) {
+  .contact-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; } }
+
+.contact-container h2 {
+  padding-left: 20%; }
+  @media (min-width: 840px) {
+    .contact-container h2 {
+      padding-left: 50%; } }
 
 .contact-image {
-  padding-top: 2%;
-  margin-bottom: 4%;
-  float: left;
+  margin: 4% auto;
   display: block;
-  margin-right: 0;
-  width: 57.35098%; }
+  width: 80%; }
+  @media (min-width: 840px) {
+    .contact-image {
+      margin: 4% 0;
+      float: left;
+      width: 57.35098%; } }
   .contact-image p {
     margin-bottom: 2%; }
 
@@ -573,7 +580,7 @@ nav a {
   vertical-align: top; }
 
 .main-nav a {
-  color: #ddd;
+  color: #FFF;
   display: block;
   font-family: "Poppins", sans-serif;
   margin: 20px 30px 0; }
@@ -591,16 +598,18 @@ nav a {
 .main-logo {
   width: 135px;
   float: left;
-  position: relative;
-  z-index: 3; }
+  visibility: hidden; }
   .main-logo a {
+    line-height: 66px;
+    margin: 0;
     background: url(../img/logo-small.png) no-repeat center bottom; }
     .main-logo a:hover {
-      background-color: transparent; }
+      border-bottom: none; }
   @media (min-width: 840px) {
     .main-logo {
       position: static;
-      z-index: 0; } }
+      z-index: 0;
+      visibility: visible; } }
 
 .mobile-nav-button {
   display: block;
@@ -630,7 +639,7 @@ nav a {
   transition: all .35s ease-out;
   position: absolute;
   z-index: 2;
-  background: #97706A;
+  background: #99646a;
   width: 100%;
   height: 100%;
   padding-top: 20%; }
@@ -876,11 +885,11 @@ nav a {
       margin-top: 2px;
       transition: width 0.2s ease-in-out;
       display: block;
-      background: #fff; }
+      background: #886A68; }
     .images-container li:hover::after {
       width: 100%; }
 
-.select-item::after {
+li.select-item::after {
   width: 100%; }
 
 .link-project {

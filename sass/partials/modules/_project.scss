@@ -101,7 +101,7 @@
       margin-top: 2px;
       transition: width 0.2s ease-in-out;
       display: block;
-      background: #fff;
+      background: #886A68;
     }
 
     &:hover::after{
@@ -111,11 +111,8 @@
 
 }
 
-.select-item {
-
-  &::after{
-    width: 100%;
-  }
+li.select-item::after{
+  width: 100%;
 }
 
 .link-project {

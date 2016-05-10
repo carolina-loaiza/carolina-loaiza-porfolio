@@ -93,23 +93,32 @@ footer {
 
 
 .contact-container {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
+  @media (min-width: 840px) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+  }
 
   h2 {
-    padding-left: 60%;
+    padding-left: 20%;
+
+    @media (min-width: 840px) {
+      padding-left: 50%;
+    }
   }
 }
 
 .contact-image {
-  padding-top: 2%;
-  margin-bottom: 4%;
-  float: left;
+  margin: 4% auto;
   display: block;
-  margin-right: 0;
-  width: 57.35098%;
+  width: 80%;
+
+  @media (min-width: 840px) {
+    margin: 4% 0;
+    float: left;
+    width: 57.35098%;
+  }
 
   p {
     margin-bottom: 2%;

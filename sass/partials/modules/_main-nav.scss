@@ -27,7 +27,7 @@ nav {
   li {
     vertical-align: top;
   }
-  
+
   a {
     color: $text;
     display: block;
@@ -51,20 +51,22 @@ nav {
 .main-logo { 
   width: 135px;
   float: left;
-  position: relative;
-  z-index: 3;
+  visibility: hidden;
   
   a {
+    line-height: 66px;
+    margin: 0;
     background: url(../img/logo-small.png) no-repeat center bottom;
     @extend %text-hidden;
     &:hover {
-      background-color: transparent;
+      border-bottom: none;
     }
   }
 
   @media (min-width: 840px){
     position: static;
     z-index: 0;
+    visibility: visible;
   }
 }
 
@@ -91,7 +93,7 @@ nav {
   transition: all .35s ease-out;
   position: absolute;
   z-index: 2;
-  background: #97706A;
+  background: #99646a;
   width: 100%;
   height: 100%;
   padding-top: 20%;
