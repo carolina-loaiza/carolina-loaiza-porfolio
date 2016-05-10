@@ -2,7 +2,7 @@
 // Estilos para los elementos base y footer
 //
 
-* {
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -14,8 +14,9 @@ ul, p {
 a {
   color: #fff;
   font-family: $text-sans;
-  @include font-size(18);
+  @include font-size(16);
   text-decoration: none;
+  font-weight: 100;
 }
 
 body {
@@ -51,8 +52,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
   @include font-size(60);
-  padding: 5% 0 3% 0;
-  text-align: center;
+  text-align: left;
 }
 
 li {
@@ -62,10 +62,12 @@ li {
 p, pre{
   font-family: $text-sans;
   margin-bottom: 4%;
+  font-weight: 100;
+
   @include font-size(15);
 
   @media (min-width: 720px) {
-    @include font-size(18);
+    @include font-size(16);
   }
 }
 
@@ -75,52 +77,54 @@ p, pre{
 //
 
 footer {
-  background:  url("http://res.cloudinary.com/elcolectivo/image/upload/v1460600527/q22emushr9ek7f4hgv8y.png") no-repeat;
+  background: #f2f2f2;
   overflow: hidden;
-  
-  .button {
-    margin: 0 auto 50px;
-    width: 253px;
 
-    @media (min-width: 840px) {
-      float: left;
-      width: initial;
-    }
-  }
-
-  h2 {
+  hr {
+    display: block;
+    height: 20px;
+    margin: 0;
+    border: none;
     -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
     box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
   }
 }
 
-.contact-container p{
-  margin-bottom: 8%;
 
-  @media (min-width: 840px) {
-    margin-bottom: 1%;
+.contact-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+
+  h2 {
+    padding-left: 60%;
   }
 }
 
-.contact-container {
-  padding-top: 50px;
-  width: 90%;
+.contact-image {
+  padding-top: 2%;
+  margin-bottom: 4%;
+  float: left;
+  display: block;
+  margin-right: 0;
+  width: 57.35098%;
 
-  @media (min-width: 840px) {
-    width: 80%;
+  p {
+    margin-bottom: 2%;
   }
 }
 
 .section-title {
-  @include font-size(100);
-  padding: 0;
-  margin: -4% 0;
-  color: rgba(242, 242, 242, .4);
-  position: relative;
+  padding: 3% 0;
 
-  @media (min-width: 840px) {
-    @include font-size(200);
+  &::after {
+    content: "";
+    height: 6px;
+    width: 60px;
+    display: block;
+    background: #fff;
   }
 }
 
@@ -160,4 +164,30 @@ footer {
   overflow-y: hidden;
 }
 
+.link {
+  display: inline-block;
+  margin-bottom: 6%;
+  
+  &::after {
+    content: "";
+    height: 6px;
+    width: 30%;
+    display: block;
+    background: #fff;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover::after{
+    width: 100%;
+  }
+}
+
+.icon {
+  @include font-size(25);
+  vertical-align: middle;
+  width: 24px;
+  text-align: center;
+  margin-right: 8px;
+  color: rgba(255, 255, 255, 0.4);
+}
 

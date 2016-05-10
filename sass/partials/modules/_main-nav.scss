@@ -15,6 +15,10 @@ nav {
 
 // Navegación principal
 .main-nav {
+  @media (max-width: 840px){
+    overflow: hidden;
+  }
+
   li {
     vertical-align: top;
   }

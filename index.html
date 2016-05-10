@@ -14,11 +14,12 @@
     <![endif]-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     <title>Carolina Loaiza R</title>
   </head>
   <body>
-    <header id="header" class="background-image">
+    <header id="header" class="header">
       <!-- Start header -->
       <nav class="main-nav">
         <h1 class="main-logo"><a href="index.html">Carolina Loaiza R / Design and Front-End Developer</a></h1>
@@ -29,25 +30,22 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="header-content">
-        <span class="portrait"></span>
-        <h2>Carolina Loaiza R<span>Design and Front-End Developer</span></h2>
-      </div>
     </header>
     <!-- End header -->
     <!-- Start About me section -->
-    <section id="about-me" class="about-me">
-      <h2 class="section-title"><span class="about-title">¡</span>Hello<span class="about-title">!</span></h2>
-      <div class="about-info">
-        <p>I am from Alajuela, I'm 22 years old and I graduated from CETAV (Centro de Tecnologías y Artes Visuales) specializing in Front-end Development. I love the sun and the beach, but what I like the most are activities related to design, culture and technologies. I consider myself a very creative person, I like to do projects that challenge my knowledge and bring me new skills.</p>
-        <!-- <p>HTML, CSS and JavaScript are some of the languages that I use (and I'm still learning) in my projects with the help of tools like Git and Grunt that allows me to transform customer problems and my ideas into a functional website.</p> -->
-        <a href="img/Carolina_Resume.pdf" target="_blank" class="button">See my resume<span class="icon icon-eye"></span></a>
-      </div>
+    <section id="about-me" class="container about-me">
+        <div class="about-info">
+            <h2 class="about-title"><span>Hello, I am</span>Carolina Loaiza</h2>
+            <p>I graduated from CETAV (Centro de Tecnologías y Artes Visuales) specializing in Front-end Development. I love the sun and the beach, but what I like the most are activities related to design, culture and technologies. I consider myself a very creative person, I like to do projects that challenge my knowledge and bring me new skills.</p>
+            <a href="img/Carolina_Loaiza_Resume.pdf" class="link" target="_blank">See my resume</a>
+        </div>
+        <div class="about-image">
+        </div>
     </section>
     <!-- End About me section -->
     <!-- Start Project gallery section -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">Projects</h2>
+    <section id="projects" class="container projects">
+      <h2 class="section-title projects-title">Projects</h2>
       <ul class="projects-container">
         <li id="projectColectivo" class="first-project">
           <div class="project-item project-colectivo">
@@ -110,14 +108,18 @@
     <!-- End Project Json info -->
     <!-- Start footer -->
     <footer id="contact" class="background-image">
-    <h2 class="section-title contact-title">Contact</h2>
+    <hr/>
       <div class="contact-container">
-        <p><span class="icon icon-chat"></span>Any comments, questions, suggestions or a simple hello is always welcome.</p>
-        <p><span class="icon icon-email"></span>karolina801chan@gmail.com</p>
-        <p><span class="icon icon-phone"></span>8544-8559</p>
-        <a href="https://www.linkedin.com/in/carolinaLoaiza" target="_blank" class="button">Check out my profile on LinkedIn<span class="icon icon-eye"></span></a>
-        <span class="copyright">Copyright - Carolina Loaiza Ramirez</span>
+        <h2 class="section-title">Contact</h2>
       </div>
+      <div class="contact-image">
+        <p>Any comments, questions, suggestions or a simple hello is always welcome.</p>
+        <a href="https://www.linkedin.com/in/carolinaLoaiza" target="_blank" class="link">Check out my profile on LinkedIn</a>
+        <p><i class="fa fa-map-marker icon" aria-hidden="true"></i>Invu Las Cañas, Alajuela, Alajuela, Costa Rica</p>
+        <p><i class="fa fa-envelope-o icon" aria-hidden="true"></i>karolina801chan@gmail.com</p>
+        <p><i class="fa fa-phone icon" aria-hidden="true"></i>(506)8544-8559</p>
+      </div>
+      <span class="copyright">Copyright - Carolina Loaiza Ramirez</span>
       <!-- End Contact section -->
     </footer>
     <!-- scripts -->

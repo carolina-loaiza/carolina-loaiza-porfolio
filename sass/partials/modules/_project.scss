@@ -26,11 +26,20 @@
   @media (min-width: 1366px) {
     margin: 2% 0 2% 12%;
   }
+
+  span {
+    margin-right: 20px;
+  }
+
+  .icon {
+    color: rgba(136, 106, 104, 0.8);
+  }
 }
 
 .project-info {
   h2 {
     font-family: $text-sans;
+    font-weight: 100;
 
     @media (min-width: 840px) {
       margin-top: 3%;
@@ -38,8 +47,7 @@
   }
 
   h3 {
-    @include font-size(30);
-    text-align: center;
+    @include font-size(25);
     margin-bottom: 8%;
   }
 }
@@ -85,39 +93,33 @@
     cursor: pointer;
     overflow: hidden;
     vertical-align: middle;
+    padding-bottom: 5px;
+    
+    &::after{
+      content: "";
+      height: 6px;
+      width: 0;
+      transition: width 0.2s ease-in-out;
+      display: block;
+      background: #fff;
+    }
+
+    &:hover::after{
+      width: 100%;
+    }
   }
+
 }
 
 .select-item {
-  border: 5px solid;
+  border-bottom: 6px solid;
 }
 
-.link {
-  margin-top: 2%;
-  margin-right: 5%;
-  @include button(#886A68, #886A68);
-  display: inline-block;
-  @include font-size(15);
+.link-project {
+  color: #886A68;
 
-  @media (min-width: 720px) {
-    @include font-size(18);
-  }
-  
-  &:hover {
-    background-color: #886A68;
-    color: $background-color;
-  }
-
-  &:hover > .icon-browser {
-    background-position: 93px -34px;
-  }
-
-  &:hover > .icon-github {
-    background-position: 66px -34px;
-  }
-
-  @media (min-width: 1100px) {
-    margin-bottom: 8%;
+  &::after {
+    background: #886A68;
   }
 }
 

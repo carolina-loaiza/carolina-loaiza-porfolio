@@ -28,8 +28,8 @@
       url: 'js/datos.js',
       templateCopy: '<h2>{{name}}</h2><h3>{{type}}</h3>'+
                       '<p>{{copy}}</p>'+
-                      '{{#git}}<a href={{git}} target="_blank" class="link">Github Code<span class="icon icon-github"></span></a>{{/git}}'+
-                      '{{#link}}<a href={{link}} target="_blank" class="link">Web Site<span class="icon icon-browser"></span></a>{{/link}}'+
+                      '{{#git}}<span><i class="fa fa-github icon" aria-hidden="true"></i><a href={{git}} target="_blank" class="link link-project">Github Code</a></span>{{/git}}'+
+                      '{{#link}}<span><i class="fa fa-globe icon" aria-hidden="true"></i><a href={{link}} target="_blank" class="link link-project">Web Site</a></span>{{/link}}'+
                       '<div class="images-container">'+
                         '<h3>{{gallery}}</h3>'+
                         '<ul>{{#image}}<li id={{idx}} class="image-item"><img src={{src}}>{{/image}}</li></ul>'+

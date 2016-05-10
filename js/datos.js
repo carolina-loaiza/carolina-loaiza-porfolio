@@ -24,7 +24,7 @@ var projectOurHeritage = {
 };
 
 var projectGameJam = {
-    name: "Cetav Game Jam 2015",
+    name: "Cetav GameJam 2015",
     type: "Website",
     copy: "The project is about a website for an event in the CETAV called Game Jam, the event was a 48 hours straight marathon to make a playable demo of a game with the climate change as main theme. For this site was important to mention all persons and organizations that were involved in the event and present the information of the four playable demos that were made in the Game Jam.",
     git: "https://github.com/cetavgamejam/cetavgamejam.github.io",
@@ -47,8 +47,8 @@ var projectGameJam = {
 };
 
 var projectColectivo = {
-    name: "elcolectivo",
-    type: "MEAN project",
+    name: "elColectivo",
+    type: "MEAN Project",
     copy: "El colectivo is a single page application about Costa Rica's bands, you can login or subscribe a band and create albums. The website is hosted in Heroku and I use MongoDB as database with mLab (MongoDB hosting platform), Node.js with Express as backend and AngularJS in the frontend.",
     link: "http://elcolectivo.herokuapp.com",
     git: "https://github.com/carolina-loaiza/Colectivo-Jam",
