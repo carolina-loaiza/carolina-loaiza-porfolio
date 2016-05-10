@@ -6,11 +6,16 @@ nav {
   ul {
     padding: 0;
   }
-  a:hover {
-    color: $text-secondary;
-    background-color: $background-nav;
-  }
 
+  a {
+    border: 0;
+    border-style: solid;
+    transition: border-width .1s ease-in-out;
+
+    &:hover {
+      border-bottom-width: 6px;
+    }
+  }
 }
 
 // Navegación principal
@@ -22,13 +27,12 @@ nav {
   li {
     vertical-align: top;
   }
+  
   a {
     color: $text;
     display: block;
     font-family: $text-sans;
-    height: 70px;
-    line-height: 66px;
-    padding: 0 30px;
+    margin: 20px 30px 0;
   }
 }
 

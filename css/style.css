@@ -442,7 +442,7 @@ p, pre {
       font-size: 1.6rem; } }
 
 footer {
-  background: #f2f2f2;
+  background: #6B5C5A;
   overflow: hidden; }
   footer hr {
     display: block;
@@ -558,9 +558,12 @@ footer {
 nav ul {
   padding: 0; }
 
-nav a:hover {
-  color: #856d6d;
-  background-color: rgba(225, 225, 225, 0.9); }
+nav a {
+  border: 0;
+  border-style: solid;
+  transition: border-width .1s ease-in-out; }
+  nav a:hover {
+    border-bottom-width: 6px; }
 
 @media (max-width: 840px) {
   .main-nav {
@@ -573,9 +576,7 @@ nav a:hover {
   color: #ddd;
   display: block;
   font-family: "Poppins", sans-serif;
-  height: 70px;
-  line-height: 66px;
-  padding: 0 30px; }
+  margin: 20px 30px 0; }
 
 .main-nav-container {
   height: 0;
@@ -863,7 +864,6 @@ nav a:hover {
       display: none; } }
   .images-container li {
     margin: 5px;
-    height: 83px;
     box-sizing: content-box;
     cursor: pointer;
     overflow: hidden;
@@ -873,14 +873,15 @@ nav a:hover {
       content: "";
       height: 6px;
       width: 0;
+      margin-top: 2px;
       transition: width 0.2s ease-in-out;
       display: block;
       background: #fff; }
     .images-container li:hover::after {
       width: 100%; }
 
-.select-item {
-  border-bottom: 6px solid; }
+.select-item::after {
+  width: 100%; }
 
 .link-project {
   color: #886A68; }
