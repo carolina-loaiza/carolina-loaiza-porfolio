@@ -1,0 +1,18 @@
+<div class="container container-project">
+    <section class="project-info">
+    <a href=""><i class="fa fa-long-arrow-left home-link" aria-hidden="true"></i></a>
+        <h2>{{project.data.name}}</h2>
+        <h3>{{project.data.type}}</h3>
+        <p>{{project.data.copy}}</p>
+        <span><i class="fa fa-github icon" aria-hidden="true"></i><a href={{project.data.git}} target="_blank" class="link">Github Code</a></span>
+        <span ng-show="project.data.link"><i class="fa fa-globe icon" aria-hidden="true"></i><a href={{project.data.link}} target="_blank" class="link">Web Site</a></span>
+        <a ui-sref="projectPage({project_name: project.data.next})"><i class="fa fa-long-arrow-right next-link" aria-hidden="true"></i></a>
+    </section>
+    <section class="project-gallery">
+        <ul>
+            <li ng-repeat="item in project.data.gallery">
+            <img ng-src="http://res.cloudinary.com/elcolectivo/image/upload/c_scale,w_840/{{item.image}}" alt="gallery">
+            </li>
+        </ul>
+    </section>
+</div>

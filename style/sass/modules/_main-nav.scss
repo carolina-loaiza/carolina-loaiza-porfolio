@@ -56,7 +56,7 @@ nav {
   a {
     line-height: 66px;
     margin: 0;
-    background: url(../img/logo-small.png) no-repeat center bottom;
+    background: url(../assets/logo-small.png) no-repeat center bottom;
     @extend %text-hidden;
     &:hover {
       border-bottom: none;

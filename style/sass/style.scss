@@ -1,0 +1,21 @@
+//
+// Estilos para el portafolio v.2 Carolina Loaiza R.
+//
+
+//
+// Parciales
+//
+
+// Parciales base
+@import "basic/variables";
+@import "basic/mixins";
+@import "basic/placeholders";
+@import "basic/base";
+@import "basic/layout";
+
+// Módulos
+@import "modules/main-nav";
+@import "modules/header";
+@import "modules/about";
+@import "modules/preview-project";
+@import "modules/project-page";

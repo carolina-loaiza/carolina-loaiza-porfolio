@@ -4,7 +4,7 @@
 
 .about-me {
   background-color: $section-about;
-  
+
   @media (min-width: 1105px){
     overflow: hidden;
     height: 570px;
@@ -12,31 +12,52 @@
 }
 
 .about-title {
-  @include font-size(50);
-  margin-left: 20px;
-  margin-bottom: 4%;
+  @include font-size(48);
   text-align: left;
 
   @media (min-width: 840px){
+    margin-left: 20px;
     @include font-size(70);
   }
 
   span {
     margin-left: -20px;
     display: block;
-    @include font-size(40);
+    @include font-size(34);
     font-family: $title-cursive;
+
+    @media (min-width: 840px){
+      @include font-size(40);
+    }
+  }
+}
+
+.about-subtitle {
+  @include font-size(28);
+  color: #fff;
+  margin-top: -12px;
+  margin-bottom: 40px;
+
+  @media (min-width: 840px){
+    margin-left: 20px;
+  }
+
+  &::after,
+  &::before {
+    content: "-";
+    padding: 0 5px;
+    display: inline-block;
   }
 }
 
 .about-info {
   display: block;
-  padding-left: 20%;
-  padding-top: 2%;
+  width: 80%;
+  margin: 0 auto;
   text-align: left;
 
-  p {
-    width: 75%;
+  @media (min-width: 840px){
+    padding-top: 8%;
   }
 
   @media (min-width: 1105px){
@@ -44,7 +65,15 @@
     margin-right: 2.35765%;
     width: 65.88078%;
     padding-top: 4%;
-    padding-left: 200px;
+    padding-left: 16%;
+  }
+
+  p {
+    margin-bottom: 40px;
+
+    @media (min-width: 1105px){
+      width: 75%;
+    }
   }
 }
 

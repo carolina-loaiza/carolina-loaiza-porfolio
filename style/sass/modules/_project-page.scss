@@ -1,0 +1,101 @@
+.container-project {
+    position: relative;
+}
+
+.project-info {
+    padding: 5%;
+    background: #99646a;
+    overflow: hidden;
+    display: block;
+    margin-right: 0;
+
+    @media (min-width: 1105px){
+        position: fixed;
+        height: 100%;
+        float: left;
+        width: 31.76157%;
+    }
+
+    h2 {
+        font-weight: 200;
+        @include font-size(40);
+        font-family: $text-sans;
+        margin: 12% 0 2% 0;
+    }
+
+    h3 {
+        @include font-size(25);
+        margin-bottom: 6%;
+    }
+
+    span {
+        margin-right: 15%;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    p {
+        margin-bottom: 15%;
+    }
+}
+
+.project-gallery {
+    padding: 5% 2.35765%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 1105px){
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        float: right;  
+    }
+
+    img {
+        max-width: 1000px;
+        margin-bottom: 5%;
+    }
+}
+
+.home-link,
+.next-link {
+    font-weight: 100;
+    @include font-size(30);
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover {
+        color: #fff;
+    }
+
+    &::after {
+        font-family: $text-sans;
+        @include font-size(16);
+        display: block;
+        margin-top: -10px;
+    }
+}
+
+.home-link {
+    @media (min-width: 1105px){
+        margin-left: -14%;
+    }
+
+    &::after {
+        content: "Projects";
+        margin-left: 20px;
+    }
+}
+
+.next-link {
+    text-align: right;
+    display: block;
+
+    @media (min-width: 1105px){
+        margin-right: -40px;
+    }
+
+    &::after {
+        content: "Next Project";
+        margin-right: 20px;
+    }
+}

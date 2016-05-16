@@ -2,7 +2,9 @@
 // Estilos para los elementos base y footer
 //
 
-*, *::after, *::before {
+*,
+*::after, 
+*::before {
   box-sizing: inherit;
 }
 
@@ -71,26 +73,26 @@ p, pre{
   }
 }
 
-
-// 
-// Estilos para los elementos del footer
-//
+img {
+  max-width: 1150px;
+  height: 100%;
+  width: 100%;
+}
 
 footer {
   background: #6B5C5A;
   overflow: hidden;
-
-  hr {
-    display: block;
-    height: 20px;
-    margin: 0;
-    border: none;
-    -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
-  }
 }
 
+hr {
+  display: block;
+  height: 20px;
+  margin: 0;
+  border: none;
+  -moz-box-shadow: inset 0 20px -20px 20px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 20px -20px -20px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.6);
+}
 
 .contact-container {
   @media (min-width: 840px) {
@@ -99,20 +101,11 @@ footer {
     margin-right: 2.35765%;
     width: 40.29137%;
   }
-
-  h2 {
-    padding-left: 20%;
-
-    @media (min-width: 840px) {
-      padding-left: 50%;
-    }
-  }
 }
 
 .contact-image {
-  margin: 4% auto;
+  margin: 6%;
   display: block;
-  width: 80%;
 
   @media (min-width: 840px) {
     margin: 4% 0;
@@ -121,12 +114,20 @@ footer {
   }
 
   p {
-    margin-bottom: 2%;
+    margin-bottom: 6%;
+
+    @media (min-width: 840px) {
+      margin-bottom: 2%;
+    }
   }
 }
 
 .section-title {
-  padding: 3% 0;
+  padding: 6%;
+
+  @media (min-width: 840px) {
+    padding: 3% 0;
+  }
 
   &::after {
     content: "";
@@ -138,44 +139,16 @@ footer {
 }
 
 .copyright {
-  margin-bottom: 1%;
+  margin: 20% 0 1% 0;
   display: block;
   font-size: 15px;
   text-align: center;
   clear: both;
 }
 
-// Basic Button
-
-.button {
-  margin-top: 1.5%;
-  font-weight: normal;
-  @include button(#fff, #fff);
-  @include font-size(15);
-
-  @media (min-width: 720px) {
-    @include font-size(18);
-  }
-
-  &:hover {
-    background-color: #fff;
-    color: $text-secondary;
-  }
-
-  &:hover > .icon-eye {
-    background-position: 44px -23px;
-  }
-}
-
-// Disable Vertical Scroll in mobile 
-
-.disable-scroll {
-  overflow-y: hidden;
-}
-
 .link {
   display: inline-block;
-  margin-bottom: 6%;
+  margin-bottom: 40px;
   
   &::after {
     content: "";

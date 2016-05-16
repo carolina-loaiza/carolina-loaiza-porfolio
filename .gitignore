@@ -7,3 +7,8 @@
 .sass-cache
 .DS_Store
 style.css.map
+node_modules
+test
+.env
+.tmp
+bower_components

@@ -29,19 +29,24 @@
 }
 
 .project-name {
-  height: 100%;
-  padding: 17% 5%;
+  padding: 10% 5%;
 
   @media (min-width: 840px) {
-    padding: 17% 10%;
+    padding: 10% 10%;
   }
 
-  position: absolute;
-  text-decoration: none;
   width: 100%;
   @extend %item-transition;
   @include scale(1);
   -webkit-backface-visibility: hidden;
+}
+
+.projects-link {
+  float: right;
+  margin-right: 10%;
+  font-size: 4rem;
+  visibility: hidden;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 .project-item {
@@ -58,10 +63,17 @@
       opacity: 0;
       @include scale(0);
     }
+
+    .projects-link {
+      visibility: visible;
+    }
   }
 }
 
-.project-colectivo { 
+.project-colectivo {
+  @media (min-width: 1366px) {
+    padding-top: 20%;
+  }
   background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460602268/stojy0m4jukf30ncv8yk.png");
 }
 
@@ -81,17 +93,3 @@
   background-image: url("http://res.cloudinary.com/elcolectivo/image/upload/v1460601586/alr9nl99trddf2txgavs.png");
 }
 
-.projects-container,
-.projects-title {
-  margin: 0 auto;
-  max-width: 400px;
-  overflow: hidden;
-
-  @media (min-width: 840px) {
-    max-width: 800px;
-  }
-  
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
