@@ -24,6 +24,7 @@
 .header_projects {
   position: absolute;
   width: 100%;
+  visibility: hidden;
   
   @media (min-width: 840px){
     position: fixed;

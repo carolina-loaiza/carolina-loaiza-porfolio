@@ -2,10 +2,10 @@
 <!-- Start header -->
 <nav class="main-nav">
   <h1 class="main-logo"><a ui-sref="main">Carolina Loaiza R / Design and Front-End Developer</a></h1>
-  <button class="mobile-nav-button" id="mobile-nav">Menu</button>
-  <ul class="main-nav-container">
-    <li><a href="#projects" ng-click="scrollTo('#projects')">Works</a></li>
-    <li><a href="#about-me" ng-click="scrollTo('#about')">About</a></li>
-    <li><a href="#contact" ng-click="scrollTo('#contact')">Contact</a></li>
+  <button class="mobile-nav-button" ng-click="nav.showMenu()">{{nav.textMenu}}</button>
+  <ul class="main-nav-container" ng-class="{ mainNavMobile: nav.isMenuShow }">
+    <li><a href="" ng-click="nav.scrollTo('projects')">Works</a></li>
+    <li><a href="" ng-click="nav.scrollTo('about')">About</a></li>
+    <li><a href="" ng-click="nav.scrollTo('contact')">Contact</a></li>
   </ul>
 </nav>

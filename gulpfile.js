@@ -28,7 +28,7 @@ gulp.task('watch', ['browser-sync'], function() {
 });
 
 gulp.task('inject', function() {
-  gulp.src('./app/index.html')
+  gulp.src('./index.html')
     .pipe(inject(gulp.src(bowerFiles(), {read: false}), { relative: true, name: 'bower' }))
     .pipe(inject(gulp.src(['!./app/bower_components/**/*', './app/**/*.js']) 
       .pipe(angularFilesort()), { relative: true}

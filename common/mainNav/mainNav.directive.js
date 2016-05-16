@@ -4,9 +4,12 @@
 
     angular
     .module('portfolio')
-    .directive('mainNav', function($location) {
+    .directive('mainNav', function($location, $anchorScroll) {
         return {
           templateUrl: 'common/mainNav/mainNav.html',
+          bindToController: true,
+          controllerAs: 'nav',
+          controller: 'NavbarController',
           restrict: 'A',
           link: function(scope) {
             scope.isCurrentPath = function(path) {
@@ -14,19 +17,29 @@
                 return true;
               }
             };
-
-            scope.scrollTo = function(element) {
-              document.querySelector('body').animate({
-                scrollTop: document.getElementById(element).offset().top
-              }, 2000);
-            }
-
-            /*elem.mainContainer.stop().animate({
-              scrollTop: $( path ).offset().top - -10
-            }, seconds);*/
           }
-
         };
-    });
+    })
+    .controller('NavbarController', function($location, $anchorScroll) {
+      var vm = this;
+      vm.textMenu = 'Menu';
 
+      vm.scrollTo = function(anchor) {
+        vm.isMenuShow = false;
+        vm.textMenu = 'Menu';
+        $location.hash(anchor);
+        $anchorScroll();
+      }
+
+      vm.showMenu = function() {
+
+        if (vm.isMenuShow) {
+          vm.isMenuShow = false;
+          vm.textMenu = 'Menu';
+        }else {
+          vm.textMenu = 'Hide';
+          vm.isMenuShow = true;
+        }
+      }
+    });
 })();
