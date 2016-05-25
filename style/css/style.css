@@ -457,7 +457,7 @@ nav a {
   position: relative; }
 
 .project-info {
-  padding: 5%;
+  padding: 2%;
   background: #99646a;
   overflow: hidden;
   display: block;
@@ -473,7 +473,7 @@ nav a {
     font-size: 40px;
     font-size: 4rem;
     font-family: "Poppins", sans-serif;
-    margin: 12% 0 2% 0; }
+    margin: 6% 0 2% 0; }
   .project-info h3 {
     font-size: 25px;
     font-size: 2.5rem;
@@ -483,7 +483,7 @@ nav a {
     overflow: hidden;
     display: inline-block; }
   .project-info p {
-    margin-bottom: 15%; }
+    margin-bottom: 10%; }
 
 .project-gallery {
   padding: 5% 2.35765%;
@@ -518,7 +518,8 @@ nav a {
 
 @media (min-width: 1105px) {
   .home-link {
-    margin-left: -14%; } }
+    margin-top: 14%;
+    margin-left: -3%; } }
 
 .home-link::after {
   content: "Projects";
@@ -529,7 +530,7 @@ nav a {
   display: block; }
   @media (min-width: 1105px) {
     .next-link {
-      margin-right: -40px; } }
+      margin-right: -14px; } }
   .next-link::after {
     content: "Next Project";
     margin-right: 20px; }
